@@ -10,5 +10,6 @@ The aim of the feedack system is to offer the opportunity to both caregivers and
 4. Request / suggest a feature that is currently not available
 5. Place a complaint
 6. Request an investigation for a payment
-## As-Is feedback system!
-[BPMN_Helpica_As_Is](https://user-images.githubusercontent.com/127488344/235164344-0301a355-84f7-4a10-811b-be07f8d98020.png)
+## As-Is feedback system
+
+![BPMN_Helpica_As_Is](https://user-images.githubusercontent.com/127488344/235164344-0301a355-84f7-4a10-811b-be07f8d98020.png)
