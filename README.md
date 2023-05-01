@@ -33,6 +33,8 @@ The process is completely manual and doesn't take advantage of automation and di
 * it is **difficult to track and monitor** requests which can make it challenging to identify and address issues in a timely manner.
 
 ## To-Be feedback system
+Automation and digitalization should be employed to improve the To-Be process.
+
 The process starts with a feedback form beeing sent to the helpica.ch team. The form is created with Google Forms. First thing, an automation will create **a case number** and acknowledge the receipt of the form to the sender. 
 
 Based on a decision table the system will decide how to continue with the request.
