@@ -1,6 +1,6 @@
 # Team-Watermelons 🍉
 
-| Team Members                          | E-mail address                                   |
+| Team Member                           | E-mail address                                   |
 | --------------------------------------| ------------------------------------------------ |
 | Edgard Antonio Mourão Junior          | <edgardantonio.mouraojunior@students.fhnw.ch>    |
 | Lavina Luke                           | <lavina.luke@students.fhnw.ch>                   |
