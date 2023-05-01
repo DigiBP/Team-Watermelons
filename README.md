@@ -1,5 +1,14 @@
 # Team-Watermelons 🍉
-Team members: Lavina Luke, Edgard Antonio Mourão Junior, Sabrina Cassata <br>
+
+| Team Members                          | E-mail address                                   |
+| --------------------------------------| ------------------------------------------------ |
+| Edgard Antonio Mourão Junior          | <edgardantonio.mouraojunior@students.fhnw.ch>    |
+| Lavina Luke                           | <lavina.luke@students.fhnw.ch>                  |
+| Sabrina Cassata                       | <sabrina.cassata@students.fhnw.ch>              |
+
+Supervisor: Maja Spahic
+
+
 # About helpica.ch ℹ️
 Helpica.ch is a start-up which aims to position itself as Switzerland’s leading cross-generational platform that brings together people who cannot perform daily tasks on their own and seek for Helpies with a kind heart that want to offer their support. This can be from simple chores like grocery shopping to more challenging tasks like assembling furniture. Helpica.ch wants to create a network of verified supporters in order to create a serving landscape where caregivers can find a trusted Helpi to support a beloved one at one finger click.
 ## Feedback system for helpica.ch
@@ -13,6 +22,16 @@ The aim of the feedack system is to offer the opportunity to both caregivers and
 ## As-Is feedback system
 
 ![BPMN_Helpica_As_Is](https://user-images.githubusercontent.com/127488344/235164344-0301a355-84f7-4a10-811b-be07f8d98020.png)
+
+### Issues with the current process
+The process is completely manual and doesn't take advantage of automation and digitalization. This is not ideal because
+* it is **time consuming** and it might require more time to complete than an automated process. Hence, it can slow down the productivity and increase the risk of errors. 
+* it is **error-prone** as human processes lead inevitably to mistakes, inaccuracies, and inconsistencies in the work.
+* it is **cost intensive** in the long run. 
+* it **limits scalability** once helpica.ch needs to accommodate an increased volume. 
+* there is **no structured and systematic recording** of requests which can potentially lead to inconsistencies in the work and make it difficult to identify and correct errors.
+* it is **difficult to track and monitor** requests which can make it challenging to identify and address issues in a timely manner.
+
 ## To-Be feedback system
 The process starts with a feedback form beeing sent to the helpica.ch team. The form is created with Google Forms. First thing, an automation will create **a case number** and acknowledge the receipt of the form to the sender. 
 
