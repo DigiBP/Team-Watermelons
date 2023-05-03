@@ -47,6 +47,6 @@ Any **comments** and **questions** submitted will be subject to a sentiment anal
 
 Any **reporting of a bug** will result in the request being forwarded to the engineering team who will assess it manually. Also in this case if information is missing, the sender will be contacted for further information.
 
-All **requests / suggestions for new features** will be first subject to a sentiment analysis. Should a negative sentiment be detected it will trigger an escalation to the CEO. If the sentiment analysis is neutral or positive, it will be forwarded to the business development team for a manual assessment. If additional information is needed, the sender will be contacted.
+All **requests / suggestions for new features** will be first subject to a sentiment analysis. Should a negative sentiment be detected it will trigger an escalation to the CEO. If the sentiment analysis is neutral or positive, it will be forwarded to the product owner for a manual assessment. If additional information is needed, the sender will be contacted.
 
 **Investigations for payments** will be forwarded to the accounting department. Also in this case if information is missing, the sender will be contacted for further information.
