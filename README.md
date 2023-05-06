@@ -50,3 +50,5 @@ Any **reporting of a bug** will result in the request being forwarded to the eng
 All **requests / suggestions for new features** will be first subject to a sentiment analysis. Should a negative sentiment be detected it will trigger an escalation to the CEO. If the sentiment analysis is neutral or positive, it will be forwarded to the product owner for a manual assessment. If additional information is needed, the sender will be contacted.
 
 **Investigations for payments** will be forwarded to the accounting department. Also in this case if information is missing, the sender will be contacted for further information.
+
+![BPMN_Helpica_As_Is](https://github.com/DigiBP/Team-Watermelons/blob/fa64c26c09ae170aa58dba609cbaa1b72eae6344/BPMN_Helpica_To_Be_V1.png)
