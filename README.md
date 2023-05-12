@@ -57,4 +57,4 @@ All **requests / suggestions for new features** will be first subject to a senti
 
 ## Pre-process task
 In MAKE an automated pre-process task is creating **a case number**. The case number is created by the means of random formula preceeded by the number of the current year to ensure that no duplication happens. 
-Once the **case number** is created an automated e-mail will be sent to the requester to acknowledge the request stating the **case number. **
+Once the **case number** is created an automated e-mail will be sent to the requester to acknowledge the request stating the **case number**.
