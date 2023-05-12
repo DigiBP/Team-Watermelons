@@ -55,3 +55,6 @@ All **requests / suggestions for new features** will be first subject to a senti
 ![Case Prioritization](https://github.com/DigiBP/Team-Watermelons/assets/127504668/af349c2f-57b6-4d75-b1c7-4eff261824ff)
 ![DecisionResponsibleDepartment](https://github.com/DigiBP/Team-Watermelons/assets/127504668/f1288e6b-0d88-43b4-ab96-30bea019d23d)
 
+## Pre-process task
+In MAKE an automated pre-process task is creating **a case number**. The case number is created by the means of random formula preceeded by the number of the current year to ensure that no duplication happens. 
+Once the **case number** is created an automated e-mail will be sent to the requester to acknowledge the request stating the **case number. **
