@@ -51,4 +51,7 @@ All **requests / suggestions for new features** will be first subject to a senti
 
 **Investigations for payments** will be forwarded to the accounting department. Also in this case if information is missing, the sender will be contacted for further information.
 ![BPMN_Helpica_To_Be_V2](https://github.com/DigiBP/Team-Watermelons/assets/127504668/44490096-61a0-4110-8fbb-e9a20dffc3de)
+![DMN Sentiment Analysis needed](https://github.com/DigiBP/Team-Watermelons/assets/127504668/42489bc1-d2c9-4879-975d-cb445666bf22)
+![Case Prioritization](https://github.com/DigiBP/Team-Watermelons/assets/127504668/af349c2f-57b6-4d75-b1c7-4eff261824ff)
+![DecisionResponsibleDepartment](https://github.com/DigiBP/Team-Watermelons/assets/127504668/f1288e6b-0d88-43b4-ab96-30bea019d23d)
 
