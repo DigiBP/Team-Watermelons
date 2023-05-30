@@ -65,9 +65,15 @@ All **requests / suggestions for new features** will be first subject to a senti
 ![DecisionResponsibleDepartment](https://github.com/DigiBP/Team-Watermelons/assets/127504668/f1288e6b-0d88-43b4-ab96-30bea019d23d)
 
 ## Make Scenario 1: Pre-process task
-In MAKE an automated pre-process task is creating **a case number**. The case number is created by the means of random formula preceeded by the number of the current year to ensure that no duplication happens. 
-Once the **case number** is created an automated e-mail will be sent to the requester to acknowledge the request stating the **case number**.
-[screen shot make pre-process]
+In MAKE an automated pre-process task is creating **a case number**. <br>
+<br>
+The case number is created by the means of random formula preceeded by the number of the current year to ensure that no duplication happens. <br>
+<br>
+![Business key creation](https://github.com/DigiBP/Team-Watermelons/assets/127488344/ccf36889-f4e8-4c47-bdb2-2ce8af5e9a17)<br>
+<br>
+Once the **case number** is created an automated e-mail will be sent to the requester to acknowledge the request stating the **case number**.<br>
+<br>
+![Feedback received](https://github.com/DigiBP/Team-Watermelons/assets/127488344/73a225b4-698c-4cdb-90f1-ef3bb0200e22)<br>
 
 ## Make Scenario 2: Sentiment analysis
 
