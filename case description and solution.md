@@ -34,13 +34,13 @@ The process is completely manual and doesn't take advantage of automation and di
 * there is **no structured and systematic recording** of requests which can potentially lead to inconsistencies in the work and make it difficult to identify and correct errors.
 * it is **difficult to track and monitor** requests which can make it challenging to identify and address issues in a timely manner.
 
-[Assessment 2: Processes are standard compliant and are reflecting conventions. Implementations realise the business processes and workflows are running 10%]
-[Assessment 3: Human-centric interfaces are provided. Human tasks are managed.10%]
-[Assessment 4: Service integration is running and orchestration is appropriate. Innovative service automation and/or iSaaS implementation. 10%]
-[Assessment 5: Appropriate, adequate, and innovative inclusion of automated decision making. 10%]
-[Assessment 6: apropriate data model and structured data available. 10%]
-[Assessment 7: logical structure and clarity of documentation. Graphical appearance of documentation. 10%]
-[Assessment 8: Artefacts are good quality and self-explanatory. Deployment and instantiation are running and available. Instantiation, solution and results are reproducible. 10%]
+[Assessment 2: Processes are standard compliant and are reflecting conventions. Implementations realise the business processes and workflows are running 10%] <br>
+[Assessment 3: Human-centric interfaces are provided. Human tasks are managed.10%]<br>
+[Assessment 4: Service integration is running and orchestration is appropriate. Innovative service automation and/or iSaaS implementation. 10%]<br>
+[Assessment 5: Appropriate, adequate, and innovative inclusion of automated decision making. 10%]<br>
+[Assessment 6: apropriate data model and structured data available. 10%]<br>
+[Assessment 7: logical structure and clarity of documentation. Graphical appearance of documentation. 10%]<br>
+[Assessment 8: Artefacts are good quality and self-explanatory. Deployment and instantiation are running and available. Instantiation, solution and results are reproducible. 10%]<br>
 
 ## To-Be feedback system
 Automation and digitalization should be employed to improve the To-Be process.
