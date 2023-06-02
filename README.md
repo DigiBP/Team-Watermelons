@@ -23,7 +23,8 @@ The aim of the feedack system is to offer the opportunity to both caregivers and
 6. Request an investigation for a payment
 ## As-Is feedback system
 
-![BPMN_Helpica_As_Is](https://user-images.githubusercontent.com/127488344/235164344-0301a355-84f7-4a10-811b-be07f8d98020.png)
+
+![BPMN_Helpica_As_Is_FINAL](https://github.com/DigiBP/Team-Watermelons/assets/127504668/ea249a22-046d-4739-b7b8-0b99ae4716fc)
 
 ### Issues with the current process
 The process is completely manual and doesn't take advantage of automation and digitalization. This is not ideal because
@@ -60,9 +61,9 @@ Any **reporting of a bug** will result in the request being forwarded to the eng
 All **requests / suggestions for new features** will be first subject to a sentiment analysis. Should a negative sentiment be detected it will trigger an escalation to the CEO. If the sentiment analysis is neutral or positive, it will be forwarded to the product owner for a manual assessment. If additional information is needed, the sender will be contacted.
 
 **Investigations for payments** will be forwarded to the accounting department. Also in this case if information is missing, the sender will be contacted for further information.
-![BPMN_Helpica_To_Be_V2](https://github.com/DigiBP/Team-Watermelons/assets/127504668/44490096-61a0-4110-8fbb-e9a20dffc3de)
-![Case Prioritization](https://github.com/DigiBP/Team-Watermelons/assets/127504668/af349c2f-57b6-4d75-b1c7-4eff261824ff)
-![DecisionResponsibleDepartment](https://github.com/DigiBP/Team-Watermelons/assets/127504668/f1288e6b-0d88-43b4-ab96-30bea019d23d)
+![BPMN_Helpica_To_Be_FINAL](https://github.com/DigiBP/Team-Watermelons/assets/127504668/07b8fc92-40e2-4ae1-9750-f0af882098c1)
+![DecisionTable_FINAL](https://github.com/DigiBP/Team-Watermelons/assets/127504668/45df5491-9030-437c-b364-cf1f73b8dde8)
+
 
 ## Make Scenario 1: Pre-process task
 In MAKE an automated pre-process task is creating **a case number**. <br>
