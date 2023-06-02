@@ -78,6 +78,7 @@ Once the **case number** is created an automated e-mail will be sent to the requ
 ## Make Scenario 2: Sentiment analysis 
 Neutral to make sure that a value is always send back to Camunda (in case it can't recognize at all)
 ![3_MAKE_Sentiment Analysis](https://github.com/DigiBP/Team-Watermelons/assets/127488344/c46fb93b-01c9-476f-812e-0896f6bbdee4)
+![6_MAKE_Sentiment analyis details](https://github.com/DigiBP/Team-Watermelons/assets/127488344/fde87670-ed3c-4e96-acc8-27d22d4adeb6)
 
 
 ## Camunda workflow 1: request distribution and first assessment of the request
@@ -92,4 +93,10 @@ Camunda 7 does not support dependencies within a form --> new separate form need
 
 ## Make Scenario 4: Closing of the request
 ![5_MAKE_Check inbox for reply](https://github.com/DigiBP/Team-Watermelons/assets/127488344/8c0518da-826d-4bd8-b80d-b63d82e44d17)
+![7_MAKE_Parser](https://github.com/DigiBP/Team-Watermelons/assets/127488344/b2690ad0-629e-4098-b3c8-c8ce217059e5)
 
+## Error handling
+
+## Outlook
+
+## Conclusion
