@@ -1,0 +1,130 @@
+{
+  "components": [
+    {
+      "text": "Case details",
+      "type": "text",
+      "id": "Field_0kv3i7d"
+    },
+    {
+      "label": "Case ID (Business Key)",
+      "type": "textfield",
+      "id": "Field_08jem81",
+      "key": "bKey",
+      "disabled": true
+    },
+    {
+      "label": "Request/Feedback Type",
+      "type": "textfield",
+      "id": "Field_1nmangw",
+      "key": "feedbackType",
+      "disabled": true
+    },
+    {
+      "label": "Request/Feedback from Customer",
+      "type": "textfield",
+      "id": "Field_0249jxn",
+      "key": "feedback",
+      "disabled": true
+    },
+    {
+      "label": "Description Bug",
+      "type": "textfield",
+      "id": "Field_0bewd3n",
+      "key": "bug",
+      "disabled": true
+    },
+    {
+      "label": "Details Payment-Issue",
+      "type": "textfield",
+      "id": "Field_0xb24q2",
+      "key": "payment",
+      "disabled": true
+    },
+    {
+      "label": "Sentiment",
+      "type": "textfield",
+      "id": "Field_0fr66mo",
+      "key": "sentiment",
+      "disabled": true
+    },
+    {
+      "text": "Customer details",
+      "type": "text",
+      "id": "Field_11o0uuz"
+    },
+    {
+      "label": "Name",
+      "type": "textfield",
+      "id": "Field_06l4izg",
+      "key": "name",
+      "disabled": true
+    },
+    {
+      "label": "E-Mail",
+      "type": "textfield",
+      "id": "Field_0hcn9nr",
+      "key": "email",
+      "disabled": true
+    },
+    {
+      "label": "Phone",
+      "type": "textfield",
+      "id": "Field_0jk68rr",
+      "key": "phone",
+      "disabled": true
+    },
+    {
+      "text": "Solving Customer feedback /  request",
+      "type": "text",
+      "id": "Field_116rayl"
+    },
+    {
+      "values": [
+        {
+          "label": "No",
+          "value": "no"
+        },
+        {
+          "label": "Yes",
+          "value": "yes"
+        }
+      ],
+      "label": "Are additional information needed?",
+      "type": "radio",
+      "id": "Field_03excwb",
+      "key": "addInfo",
+      "validate": {
+        "required": true
+      },
+      "defaultValue": "<none>"
+    },
+    {
+      "label": "What additional information are needed?",
+      "type": "textfield",
+      "id": "Field_1v0v7ei",
+      "key": "reply"
+    },
+    {
+      "label": "Additional Feedback from Customer",
+      "type": "textfield",
+      "id": "Field_0zi0tf6",
+      "key": "lastFeedback",
+      "disabled": true
+    },
+    {
+      "label": "Solution / Reply to the Customer",
+      "type": "textfield",
+      "id": "Field_0tb31tt",
+      "key": "lastReply"
+    }
+  ],
+  "type": "default",
+  "id": "formHelpica",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.8.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.18.0",
+  "schemaVersion": 7
+}

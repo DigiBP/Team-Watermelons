@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" id="decision" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.8.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.18.0">
+  <decision id="Decision_Helpica" name="Decide who is responsible for the solving the customer request">
+    <informationRequirement id="InformationRequirement_17krdyo">
+      <requiredInput href="#InputData_1rvsd5q" />
+    </informationRequirement>
+    <informationRequirement id="InformationRequirement_0bmgbq5">
+      <requiredInput href="#InputData_08pijtq" />
+    </informationRequirement>
+    <decisionTable id="DecisionTable_1ulmdei" hitPolicy="FIRST">
+      <input id="Input_1" label="Feedback Type" camunda:inputVariable="feedbackType">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>feedbackType</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_0rtx53j">
+          <text>"Feature Request","Bug Report","Comment","Complaint","Question","Payment"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_0pflspj" label="Sentiment" biodi:width="192" camunda:inputVariable="sentiment">
+        <inputExpression id="LiteralExpression_14d083p" typeRef="string">
+          <text>sentiment</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_1ijvysv">
+          <text>"Negative","Positive","Neutral"</text>
+        </inputValues>
+      </input>
+      <output id="Output_1" label="Responsible Department" name="respDepartment" typeRef="string" biodi:width="192">
+        <outputValues id="UnaryTests_190rjdt">
+          <text>"CEO","1st Level Support","2nd Level Support","Product Owner","Accounting"</text>
+        </outputValues>
+      </output>
+      <rule id="DecisionRule_11jyw8n">
+        <description>To ensure quick processing of "negative" comments, those cases are distributed to the second level support</description>
+        <inputEntry id="UnaryTests_19al3rx">
+          <text>"Comment"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_042sr1q">
+          <text>"Negative"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1eb19dw">
+          <text>"2nd Level Support"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1narxz9">
+        <inputEntry id="UnaryTests_0cuidoh">
+          <text>"Comment"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1s8ttaa">
+          <text>"Neutral"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0a6wd4p">
+          <text>"1st Level Support"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_001zsaa">
+        <inputEntry id="UnaryTests_15x03je">
+          <text>"Comment"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0e2phrr">
+          <text>"Positive"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1c6gf2w">
+          <text>"1st Level Support"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1mffvvn">
+        <inputEntry id="UnaryTests_0645wyt">
+          <text>"Question"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1toc877">
+          <text>"Positive"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0y9mgo2">
+          <text>"1st Level Support"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1u3poaq">
+        <inputEntry id="UnaryTests_02l9eed">
+          <text>"Question"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_003tuv9">
+          <text>"Neutral"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0y4s6u4">
+          <text>"1st Level Support"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0v26gn7">
+        <inputEntry id="UnaryTests_0omu760">
+          <text>"Question"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1lkn6kl">
+          <text>"Negative"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1ms3r6y">
+          <text>"1st Level Support"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_02lg3pd">
+        <description>In order to act quickly and drive the startup forward, timely information is important. Therefore, the CEO wants to resolve complaints with the sentiment "Negative" himself. Therefore the CEO is currently handling those complaints.</description>
+        <inputEntry id="UnaryTests_19f8vhp">
+          <text>"Complaint"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0xnoc2w">
+          <text>"Negative"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ebga62">
+          <text>"CEO"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_11r54si">
+        <inputEntry id="UnaryTests_06pjd94">
+          <text>"Complaint"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0hjyvl8">
+          <text>"Neutral"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_00pp00h">
+          <text>"1st Level Support"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1opmyix">
+        <inputEntry id="UnaryTests_1ifz43i">
+          <text>"Complaint"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0rwy6hl">
+          <text>"Negative"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1pwxm0r">
+          <text>"1st Level Support"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0kxb1pb">
+        <description>Bug reports are all forwarded to 1st level support. The importance of bug fixes cannot be compared to the importance of customer feedback.</description>
+        <inputEntry id="UnaryTests_0mjzo7d">
+          <text>"Bug report"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0038jov">
+          <text>"Positive","Negative","Neutral"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1saq4bq">
+          <text>"1st Level Support"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0sbh6f9">
+        <description>Feature-reqests are all assigned to the Product Owner (PO).</description>
+        <inputEntry id="UnaryTests_12ptv2f">
+          <text>"Feature Request"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1hitp5r">
+          <text>"Positive","Negative","Neutral"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0chie44">
+          <text>"Product Owner"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0xfw5ul">
+        <description>For payments, independant of the sentiment, everything is assigned to accounting.</description>
+        <inputEntry id="UnaryTests_14b1zh0">
+          <text>"Payment"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1puxci6">
+          <text>"Positive","Negative","Neutral"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0dmttej">
+          <text>"Accounting"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <inputData id="InputData_1rvsd5q" name="Feedback Type" />
+  <inputData id="InputData_08pijtq" name="Sentiment" />
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_Helpica">
+        <dc:Bounds height="80" width="180" x="200" y="120" />
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="DMNShape_1yx6nfb" dmnElementRef="InputData_1rvsd5q">
+        <dc:Bounds height="45" width="125" x="128" y="258" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_0vrmvb5" dmnElementRef="InformationRequirement_17krdyo">
+        <di:waypoint x="191" y="258" />
+        <di:waypoint x="260" y="220" />
+        <di:waypoint x="260" y="200" />
+      </dmndi:DMNEdge>
+      <dmndi:DMNShape id="DMNShape_07hgqmb" dmnElementRef="InputData_08pijtq">
+        <dc:Bounds height="45" width="125" x="318" y="258" />
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="DMNEdge_16jfehq" dmnElementRef="InformationRequirement_0bmgbq5">
+        <di:waypoint x="381" y="258" />
+        <di:waypoint x="320" y="220" />
+        <di:waypoint x="320" y="200" />
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
