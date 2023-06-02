@@ -81,16 +81,15 @@ Neutral to make sure that a value is always send back to Camunda (in case it can
 
 
 ## Camunda workflow 1: request distribution and first assessment of the request
-![4_Additiona Feedback Reply Customer](https://github.com/DigiBP/Team-Watermelons/assets/127488344/2fb68b57-8d4c-4d2f-a0a5-382f5d1638ea)
 
 Camunda 7 does not support dependencies within a form --> new separate form needed
 
 
 ## Make Scenario 3: First feedback to customer
-![5_MAKE_Check inbox for reply](https://github.com/DigiBP/Team-Watermelons/assets/127488344/8c0518da-826d-4bd8-b80d-b63d82e44d17)
+![4_Additiona Feedback Reply Customer](https://github.com/DigiBP/Team-Watermelons/assets/127488344/2fb68b57-8d4c-4d2f-a0a5-382f5d1638ea)
 
 ## Camunda Workflow 2: 
 
 ## Make Scenario 4: Closing of the request
-
+![5_MAKE_Check inbox for reply](https://github.com/DigiBP/Team-Watermelons/assets/127488344/8c0518da-826d-4bd8-b80d-b63d82e44d17)
 
