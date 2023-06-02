@@ -75,7 +75,9 @@ Once the **case number** is created an automated e-mail will be sent to the requ
 <br>
 ![Feedback received](https://github.com/DigiBP/Team-Watermelons/assets/127488344/73a225b4-698c-4cdb-90f1-ef3bb0200e22)<br>
 
-## Make Scenario 2: Sentiment analysis
+## Make Scenario 2: Sentiment analysis 
+Neutral to make sure that a value is always send back to Camunda (in case it can't recognize at all)
+
 
 ## Camunda workflow 1: request distribution and first assessment of the request
 
