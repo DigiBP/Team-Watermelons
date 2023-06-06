@@ -11,9 +11,10 @@
 Supervisor: Maja Spahic
 
 
-# About helpica.ch ℹ️
+# ℹ️ About helpica.ch 
 Helpica.ch is a start-up which aims to position itself as Switzerland’s leading cross-generational multi-sided platform that brings together people who cannot perform daily tasks on their own and seek for Helpies. Helpies are individuals (with a kind heart) who want to offer their support. This can be from simple routine tasks like grocery shopping to more challenging tasks like assembling furniture. Helpica.ch wants to create a network of verified Helpies to create a serving landscape where caregivers can find a trusted Helpie to support a beloved one at one finger click.
-## Feedback system for helpica.ch
+
+# ℹ️ Case: Feedback system for helpica.ch
 The aim of the feedack system is to offer the opportunity to both caregivers and Helpies to communicate with the support-team of helpica.ch for the following categories:
 1. General Comments on helpica.ch and its app
 2. Ask questions
@@ -24,19 +25,29 @@ The aim of the feedack system is to offer the opportunity to both caregivers and
 
 Helpica.ch strives to digitalize its supporting processes. With their innovative business idea, they focus on delivering and developing a user-friendly App. Nevertheless, for the founder of Helpica and his team, it is essential that also processes around the app; In this case, the feedback-management process is efficient, and paint points of today's as-is process are eliminated. 
 
-## As-Is feedback system
-
+# 🔍Current As-Is Process 
+The following figure, shows the current feedback-management process of Helpica.
 
 ![BPMN_Helpica_As_Is_FINAL](https://github.com/DigiBP/Team-Watermelons/assets/127504668/ea249a22-046d-4739-b7b8-0b99ae4716fc)
 
-### Issues with the current process
-The process is completely manual and doesn't take advantage of automation and digitalization. This is not ideal because
+The current Feedback management process of Helpica contains many user tasks. If a Helpie or Caregiver (in the following referred to “Customers”) want to make a request (e.g. give general feedback, make a feature request, make a complaint etc.) they have to search for the contact data of Helpica and write an e-mail.  
+
+The Customer sends an e-mail, which Helpica receives. The handling feedbacks/requests lies within the responsibility of the 1st Level support. The First Level Support accesses the request. It is checked if all needed information are available. If all information are available ,the 1st Level Support tries to solve the issue. If the final solution can be provided by the 1st Level, a response is send to the requester. If it is not possible to solve the issue, the request is sent to the 2nd Level Support.
+
+The request is assessed by the second Level support. If the 2nd Level Support can solve the issue, the issue is solved. If it is not possible to solve the request, it is escalated to the CEO. The CEO then solves the issue. The response of a solved Issue is send to the customer by the 1st Level support.
+
+## 😕 Pain points - Issues with the current process
+The process is completely manual and doesn't take advantage of automation and digitalization. This is not ideal from the perspective of Helpica because..
 * it is **time consuming** and it might require more time to complete than an automated process. Hence, it can slow down the productivity and increase the risk of errors. 
 * it is **error-prone** as human processes lead inevitably to mistakes, inaccuracies, and inconsistencies in the work.
 * it is **cost intensive** in the long run. 
 * it **limits scalability** once helpica.ch needs to accommodate an increased volume. 
 * there is **no structured and systematic recording** of requests which can potentially lead to inconsistencies in the work and make it difficult to identify and correct errors.
 * it is **difficult to track and monitor** requests which can make it challenging to identify and address issues in a timely manner.
+
+Further, from a customer's perspective, the process is not ideal because...
+* The customer does **not receive any confirmation** of receiving the request
+* **long reposonse time**. The customers might become impatient and feeling helpless when clarification is needed
 
 [Assessment 2: Processes are standard compliant and are reflecting conventions. Implementations realise the business processes and workflows are running 10%] <br>
 [Assessment 3: Human-centric interfaces are provided. Human tasks are managed.10%]<br>
@@ -46,7 +57,8 @@ The process is completely manual and doesn't take advantage of automation and di
 [Assessment 7: logical structure and clarity of documentation. Graphical appearance of documentation. 10%]<br>
 [Assessment 8: Artefacts are good quality and self-explanatory. Deployment and instantiation are running and available. Instantiation, solution and results are reproducible. 10%]<br>
 
-## To-Be feedback system
+# ❇️To-Be-process feedback system
+
 Automation and digitalization should be employed to improve the To-Be process.
 
 A feedback form will be implemented on the webpage and app of helpica.ch. The form is created with Google Forms.
