@@ -1,6 +1,6 @@
 [Assessment 1: Scenario is innovative and user experience is addressed 10%]
 
-# Team-Watermelons 🍉
+# Team-Watermelons 🍉🍉🍉 
 
 | Team Member                           | E-mail address                                   |
 | --------------------------------------| ------------------------------------------------ |
@@ -11,10 +11,12 @@
 Supervisor: Maja Spahic
 
 
-# ℹ️ About helpica.ch 
+# About helpica.ch ℹ️ 
 Helpica.ch is a start-up which aims to position itself as Switzerland’s leading cross-generational multi-sided platform that brings together people who cannot perform daily tasks on their own and seek for Helpies. Helpies are individuals (with a kind heart) who want to offer their support. This can be from simple routine tasks like grocery shopping to more challenging tasks like assembling furniture. Helpica.ch wants to create a network of verified Helpies to create a serving landscape where caregivers can find a trusted Helpie to support a beloved one at one finger click.
 
-# ℹ️ Case: Feedback system for helpica.ch
+![helpica](https://github.com/DigiBP/Team-Watermelons/assets/127504668/08933a63-031f-4c4e-9f80-953ab6d94be4)
+
+# Case: Feedback system for helpica.ch ℹ️ 
 The aim of the feedack system is to offer the opportunity to both caregivers and Helpies to communicate with the support-team of helpica.ch for the following categories:
 1. General Comments on helpica.ch and its app
 2. Ask questions
@@ -25,7 +27,7 @@ The aim of the feedack system is to offer the opportunity to both caregivers and
 
 Helpica.ch strives to digitalize its supporting processes. With their innovative business idea, they focus on delivering and developing a user-friendly App. Nevertheless, for the founder of Helpica and his team, it is essential that also processes around the app; In this case, the feedback-management process is efficient, and paint points of today's as-is process are eliminated. 
 
-# 🔍Current As-Is Process 
+# Current As-Is Process 🔍 
 The following figure, shows the current feedback-management process of Helpica.
 
 ![BPMN_Helpica_As_Is_FINAL](https://github.com/DigiBP/Team-Watermelons/assets/127504668/ea249a22-046d-4739-b7b8-0b99ae4716fc)
@@ -36,7 +38,7 @@ The Customer sends an e-mail, which Helpica receives. The handling feedbacks/req
 
 The request is assessed by the second Level support. If the 2nd Level Support can solve the issue, the issue is solved. If it is not possible to solve the request, it is escalated to the CEO. The CEO then solves the issue. The response of a solved Issue is send to the customer by the 1st Level support.
 
-## 😕 Pain points - Issues with the current process
+## Pain points - Issues with the current process 😕
 The process is completely manual and doesn't take advantage of automation and digitalization. This is not ideal from the perspective of Helpica because..
 * it is **time consuming** and it might require more time to complete than an automated process. Hence, it can slow down the productivity and increase the risk of errors. 
 * it is **error-prone** as human processes lead inevitably to mistakes, inaccuracies, and inconsistencies in the work.
@@ -57,7 +59,7 @@ Further, from a customer's perspective, the process is not ideal because...
 [Assessment 7: logical structure and clarity of documentation. Graphical appearance of documentation. 10%]<br>
 [Assessment 8: Artefacts are good quality and self-explanatory. Deployment and instantiation are running and available. Instantiation, solution and results are reproducible. 10%]<br>
 
-# ❇️To-Be-process feedback system
+# To-Be-process feedback system ❇️
 
 Automation and digitalization should be employed to improve the To-Be process.
 
@@ -77,7 +79,8 @@ All **requests / suggestions for new features** will be first subject to a senti
 
 **Investigations for payments** will be forwarded to the accounting department. Also in this case if information is missing, the sender will be contacted for further information.
 ![BPMN_Helpica_To_Be_FINAL](https://github.com/DigiBP/Team-Watermelons/assets/127504668/07b8fc92-40e2-4ae1-9750-f0af882098c1)
-![DecisionTable_FINAL](https://github.com/DigiBP/Team-Watermelons/assets/127504668/45df5491-9030-437c-b364-cf1f73b8dde8)
+![DecisionTable_FINAL](https://github.com/DigiBP/Team-Watermelons/assets/127504668/45df5491-9030-437c-b364-cf1f73b8dde8 =150x150)
+<img src="https://github.com/DigiBP/Team-Watermelons/assets/127504668/45df5491-9030-437c-b364-cf1f73b8dde8" width="220">
 
 
 ## Make Scenario 1: Pre-process task
