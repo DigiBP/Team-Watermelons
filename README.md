@@ -1,4 +1,3 @@
-[Assessment 1: Scenario is innovative and user experience is addressed 10%]
 
 # Team-Watermelons 🍉🍉🍉 
 
@@ -51,13 +50,7 @@ Further, from a customer's perspective, the process is not ideal because...
 * The customer does **not receive any confirmation** of receiving the request
 * **long reposonse time**. The customers might become impatient and feeling helpless when clarification is needed
 
-[Assessment 2: Processes are standard compliant and are reflecting conventions. Implementations realise the business processes and workflows are running 10%] <br>
-[Assessment 3: Human-centric interfaces are provided. Human tasks are managed.10%]<br>
-[Assessment 4: Service integration is running and orchestration is appropriate. Innovative service automation and/or iSaaS implementation. 10%]<br>
-[Assessment 5: Appropriate, adequate, and innovative inclusion of automated decision making. 10%]<br>
-[Assessment 6: apropriate data model and structured data available. 10%]<br>
-[Assessment 7: logical structure and clarity of documentation. Graphical appearance of documentation. 10%]<br>
-[Assessment 8: Artefacts are good quality and self-explanatory. Deployment and instantiation are running and available. Instantiation, solution and results are reproducible. 10%]<br>
+
 
 # To-Be-process feedback system ❇️
 
@@ -89,9 +82,15 @@ The following figure shows the created To-Be process:
   - If no additional information is needed to solve the task, the customer is informed about the solution, and the ticket is closed. 
   - If additional information is needed, the customer is being asked for the required information. In this case, an automated Mail is sent to the customer. If a response is received within two days, the task is distributed to the corresponding department again; if not, the customer is informed that the ticket will be closed.
 
-
-
-
+## Benefits of the To-Be Process 💪🏼😄
+The process is automated and digitalized and many pains are relived and gains created: 
+-	The usage of form allows **storing structured data** at the very beginning of the process
+-	An **automated Case-ID** helps to facilitate the overview of all cases for helpica
+-	**Automated confirmation** of the request receipt eliminates uncertainties of customers who are wondering if their request has reached helpica.
+-	The performed **sentiment analysis support prioritizing** requests
+-	**Time savings** for Helpica, since requests are allocated to the department and a standardized process is followed across all departments
+-	**Quicker Handling** of the requests. Customers are replied much faster
+-	**Structured data**: all the data is collected in a structured form
 
 
 ## Make Scenario 1: Pre-process task
@@ -113,8 +112,8 @@ Neutral to make sure that a value is always send back to Camunda (in case it can
 
 ## Camunda workflow 1: request distribution and first assessment of the request
 
-Camunda 7 does not support dependencies within a form --> new separate form needed
-
+**notable limitations of Camunda 7**
+Camunda 7, does not support conditions.  The integrated form into the task, could benefit from conditions regarding usability. An option would be to put forms in each user task directly. But since changes must be added to each user task individually, it is highly error-prone. Therefore the team decided to have a general form
 
 ## Make Scenario 3: First feedback to customer
 ![4_Additiona Feedback Reply Customer](https://github.com/DigiBP/Team-Watermelons/assets/127488344/2fb68b57-8d4c-4d2f-a0a5-382f5d1638ea)
@@ -125,8 +124,24 @@ Camunda 7 does not support dependencies within a form --> new separate form need
 ![5_MAKE_Check inbox for reply](https://github.com/DigiBP/Team-Watermelons/assets/127488344/8c0518da-826d-4bd8-b80d-b63d82e44d17)
 ![7_MAKE_Parser](https://github.com/DigiBP/Team-Watermelons/assets/127488344/b2690ad0-629e-4098-b3c8-c8ce217059e5)
 
-## Error handling
 
 ## Outlook
 
+**Error handling**
+
+During the creation of the to-be processed we saw one important are, where a technical error could occur: While performing the sentiment analysis, depending on the inputs, no sentiment is found (e.g if Customer does only wrtie one word). In that case Eden AI, does not detect any sentiment. 
+
+We catch those cases: If sentiment = 0, the sentiment is set as neutral. This also avoids misunderstandings when the case is handled by an agent, who then wonders why the field is empty and whether there is something wrong with the own tool 😉
+
+Further one possible "Technical error" could occur, due to wrong entered email from the Customer. In this case currentyl the process-flow itself will not be interrupted.
+-	but customer satisfaction could suffer if the customer does not receive feedback. Even though if he has initially given wrong data
+
 ## Conclusion
+[Assessment 1: Scenario is innovative and user experience is addressed 10%]
+[Assessment 2: Processes are standard compliant and are reflecting conventions. Implementations realise the business processes and workflows are running 10%] <br>
+[Assessment 3: Human-centric interfaces are provided. Human tasks are managed.10%]<br>
+[Assessment 4: Service integration is running and orchestration is appropriate. Innovative service automation and/or iSaaS implementation. 10%]<br>
+[Assessment 5: Appropriate, adequate, and innovative inclusion of automated decision making. 10%]<br>
+[Assessment 6: apropriate data model and structured data available. 10%]<br>
+[Assessment 7: logical structure and clarity of documentation. Graphical appearance of documentation. 10%]<br>
+[Assessment 8: Artefacts are good quality and self-explanatory. Deployment and instantiation are running and available. Instantiation, solution and results are reproducible. 10%]<br>
