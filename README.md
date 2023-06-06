@@ -61,26 +61,37 @@ Further, from a customer's perspective, the process is not ideal because...
 
 # To-Be-process feedback system ❇️
 
-Automation and digitalization should be employed to improve the To-Be process.
+A to-be-process is created to tackle the pain point of helpica and its customers. With the integration of automation and digitalization, the feedback management process should be improved and relieve the pain points.
 
-A feedback form will be implemented on the webpage and app of helpica.ch. The form is created with Google Forms.
+**Highlevel overview of process optimisations**
+-	Feedback/Request Form
+-	Automated case-Number generation & acknowledgement of receipt
+-	Sentiment analysis of Feedback/request
+-	Case distribution to the correct department based on a decision table
+-	Standardized process for the case, that additional information are needed
+-	Automated Timer with defined time period – when a ticket is closed automatically
+-	Former closing of a case
+-	Centralized and structured collection of all data
 
-The process starts with a feedback form beeing sent to the helpica.ch team. First thing, an automation will create **a case number** and acknowledge the receipt of the form to the sender. 
-
-Based on a decision table the system will decide how to continue with the request.
-
-A **complaint** will automatically be forwarded to the 1st level support who will manually asses if the request is complete and can be taken over for resolving. In case information is missing, the sender will be contacted for further information.  
-
-Any **comments** and **questions** submitted will be subject to a sentiment analysis which in case of negative sentiment will trigger an escalation to the CEO. Any neutral or positive comment will be automatically forwarded to the 1st level support for assessment and in case information is missing, the sender will be contacted for further information.  
-
-Any **reporting of a bug** will result in the request being forwarded to the engineering team who will assess it manually. Also in this case if information is missing, the sender will be contacted for further information.
-
-All **requests / suggestions for new features** will be first subject to a sentiment analysis. Should a negative sentiment be detected it will trigger an escalation to the CEO. If the sentiment analysis is neutral or positive, it will be forwarded to the product owner for a manual assessment. If additional information is needed, the sender will be contacted.
-
-**Investigations for payments** will be forwarded to the accounting department. Also in this case if information is missing, the sender will be contacted for further information.
+The following figure shows the created To-Be process:
 ![BPMN_Helpica_To_Be_FINAL](https://github.com/DigiBP/Team-Watermelons/assets/127504668/07b8fc92-40e2-4ae1-9750-f0af882098c1)
-![DecisionTable_FINAL](https://github.com/DigiBP/Team-Watermelons/assets/127504668/45df5491-9030-437c-b364-cf1f73b8dde8 =150x150)
-<img src="https://github.com/DigiBP/Team-Watermelons/assets/127504668/45df5491-9030-437c-b364-cf1f73b8dde8" width="220">
+
+**Description of the To-Be Process**
+- To contact Helpica, a feedback form is implemented in Google Forms. With this, a standardized way to already, have structured data, right before the process is kicked of, is ensured.  Depending on the Feedback-Type, the required data fields appear (forms includes conditions). The customers are guided through the form.
+- As soon as the form is filled and send out, an automated process creates **a unique case number** and confirmation mail with the case-number is send immediately to the requester.
+- In a next step, Sentiment analysis is performed to identify the sentiment of the request
+- The feedback is then distributed to the correct department, considering "Feedback Type" and "Sentiment".
+<img src="https://github.com/DigiBP/Team-Watermelons/assets/127504668/45df5491-9030-437c-b364-cf1f73b8dde8" width="320">
+
+<img src="https://github.com/DigiBP/Team-Watermelons/assets/127504668/cbd456c6-2259-49f6-998c-f90fdebaaff0" width="820">
+
+- The corresponding department receives the task with all Case-Details. The case is then solved (assessing, checking internal systems etc.)
+  - If no additional information is needed to solve the task, the customer is informed about the solution, and the ticket is closed. 
+  - If additional information is needed, the customer is being asked for the required information. In this case, an automated Mail is sent to the customer. If a response is received within two days, the task is distributed to the corresponding department again; if not, the customer is informed that the ticket will be closed.
+
+
+
+
 
 
 ## Make Scenario 1: Pre-process task
