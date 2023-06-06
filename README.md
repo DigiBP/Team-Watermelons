@@ -12,15 +12,18 @@ Supervisor: Maja Spahic
 
 
 # About helpica.ch ℹ️
-Helpica.ch is a start-up which aims to position itself as Switzerland’s leading cross-generational platform that brings together people who cannot perform daily tasks on their own and seek for Helpies with a kind heart that want to offer their support. This can be from simple chores like grocery shopping to more challenging tasks like assembling furniture. Helpica.ch wants to create a network of verified supporters in order to create a serving landscape where caregivers can find a trusted Helpi to support a beloved one at one finger click.
+Helpica.ch is a start-up which aims to position itself as Switzerland’s leading cross-generational multi-sided platform that brings together people who cannot perform daily tasks on their own and seek for Helpies. Helpies are individuals (with a kind heart) who want to offer their support. This can be from simple routine tasks like grocery shopping to more challenging tasks like assembling furniture. Helpica.ch wants to create a network of verified Helpies to create a serving landscape where caregivers can find a trusted Helpie to support a beloved one at one finger click.
 ## Feedback system for helpica.ch
-The aim of the feedack system is to offer the opportunity to both caregivers and Helpies to communicate with the team of helpica.ch for the following categories:
-1. Comment on helpica.ch and its app
+The aim of the feedack system is to offer the opportunity to both caregivers and Helpies to communicate with the support-team of helpica.ch for the following categories:
+1. General Comments on helpica.ch and its app
 2. Ask questions
 3. Report a bug about the app
 4. Request / suggest a feature that is currently not available
 5. Place a complaint
-6. Request an investigation for a payment
+6. Request an investigation for a payment issue
+
+Helpica.ch strives to digitalize its supporting processes. With their innovative business idea, they focus on delivering and developing a user-friendly App. Nevertheless, for the founder of Helpica and his team, it is essential that also processes around the app; In this case, the feedback-management process is efficient, and paint points of today's as-is process are eliminated. 
+
 ## As-Is feedback system
 
 
