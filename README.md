@@ -50,8 +50,6 @@ Further, from a customer's perspective, the process is not ideal because...
 * The customer does **not receive any confirmation** of receiving the request
 * **long reposonse time**. The customers might become impatient and feeling helpless when clarification is needed
 
-
-
 # To-Be-process feedback system ❇️
 
 A to-be-process is created to tackle the pain point of helpica and its customers. With the integration of automation and digitalization, the feedback management process should be improved and relieve the pain points.
@@ -74,13 +72,17 @@ The following figure shows the created To-Be process:
 - As soon as the form is filled and send out, an automated process creates **a unique case number** and confirmation mail with the case-number is send immediately to the requester.
 - In a next step, Sentiment analysis is performed to identify the sentiment of the request
 - The feedback is then distributed to the correct department, considering "Feedback Type" and "Sentiment".
-<img src="https://github.com/DigiBP/Team-Watermelons/assets/127504668/45df5491-9030-437c-b364-cf1f73b8dde8" width="320">
 
-<img src="https://github.com/DigiBP/Team-Watermelons/assets/127504668/cbd456c6-2259-49f6-998c-f90fdebaaff0" width="820">
+| <img src="https://github.com/DigiBP/Team-Watermelons/assets/127504668/45df5491-9030-437c-b364-cf1f73b8dde8" width="320">                        | <img src="https://github.com/DigiBP/Team-Watermelons/assets/127504668/cbd456c6-2259-49f6-998c-f90fdebaaff0" width="820">                                   |
+| --------------------------------------| ------------------------------------------------ |
 
 - The corresponding department receives the task with all Case-Details. The case is then solved (assessing, checking internal systems etc.)
   - If no additional information is needed to solve the task, the customer is informed about the solution, and the ticket is closed. 
   - If additional information is needed, the customer is being asked for the required information. In this case, an automated Mail is sent to the customer. If a response is received within two days, the task is distributed to the corresponding department again; if not, the customer is informed that the ticket will be closed.
+  
+ **notable remarks due to limitations of Camunda**
+ - A Timer had been integrated to the model after the sentiment analysis to ensure, that the datarows are updated correctly. Further Camunda 7 has some unknown issues,  if a user task is followed after a service task.
+ - In the decision table we switched to the Hit-Policy "First" since Camunda has some issues with it. Based on the input from our expert/coach we changed it. After this change everytime it worked :)
 
 ## Benefits of the To-Be Process 💪🏼😄
 The process is automated and digitalized and many pains are relived and gains created: 
