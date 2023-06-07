@@ -137,9 +137,11 @@ This scenario is responsible for sending the reply to the customer. It checks if
 - HTTP (Make a request): Send the process back to Camunda.
 
 ## Camunda Workflow 2:<br> 
-![Form2](https://github.com/DigiBP/Team-Watermelons/assets/127504730/707f71c5-d2f7-40e6-9a68-6fe11aa4fbf8)<br>
+![Form2](https://github.com/DigiBP/Team-Watermelons/assets/127504730/aeba6db3-0a9d-4d8b-9629-0e521632c64d)<br>
+
 
 ## Make Scenario 4: Closing of the request
+
 Check Helpica's inbox for the customer further information feedback email. There is a rule in gmail to set "Helpica Cases New" label for new emails.<br>
 ![5_MAKE_Check inbox for reply](https://github.com/DigiBP/Team-Watermelons/assets/127488344/8c0518da-826d-4bd8-b80d-b63d82e44d17)<br>
 - Gmail (watch emails): Check for new email in "Helpica Cases New" folder (label) which contains "Case Number" in the subject.
