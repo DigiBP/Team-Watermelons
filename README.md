@@ -97,33 +97,44 @@ The process is automated and digitalized and many pains are relived and gains cr
 
 ## Make Scenario 1: Pre-process task
 In MAKE an automated pre-process task is creating **a case number**. <br>
-<br>
-Once the **case number** is created an automated e-mail will be sent to the requester to acknowledge the request stating the **case number**.<br>
+Once the **case number** is created an automated e-mail will be sent to the requester to acknowledge the request stating the **case request**.<br>
 <br>
 ![Feedback received](https://github.com/DigiBP/Team-Watermelons/assets/127488344/73a225b4-698c-4cdb-90f1-ef3bb0200e22)<br>
 <br>
 - Google Sheets (Watch New Rows): Check for new entries from the form google sheet
-- Tools (Set variable): Create the case number (business key) by the means of random formula with the current year as perfix to ensure that no duplication happens.
+- Tools (Set variable): Create the case number (business key) by the means of random formula with the current year as perfix to ensure that no duplication happens.<br>
 ![Business key creation](https://github.com/DigiBP/Team-Watermelons/assets/127488344/ccf36889-f4e8-4c47-bdb2-2ce8af5e9a17)<br>
-<br>
 - Google Sheets (Update a Row): Update the case number (business key) in the google sheets.
 - Gmail (Send an email): Send to the requester an acknowledgement email with the case number.
 - HTTP (Make a request): Start the process in Camunda and send the following information - Name, E-mail, Feedback Type, Customer Feedback, Phone and Case Number (business key).
 
 
 ## Make Scenario 2: Sentiment analysis 
-Neutral to make sure that a value is always send back to Camunda (in case it can't recognize at all)
-![3_MAKE_Sentiment Analysis](https://github.com/DigiBP/Team-Watermelons/assets/127488344/c46fb93b-01c9-476f-812e-0896f6bbdee4)
-![6_MAKE_Sentiment analyis details](https://github.com/DigiBP/Team-Watermelons/assets/127488344/fde87670-ed3c-4e96-acc8-27d22d4adeb6)
+This scenario performs the sentiment analysis of the customer feedback. As a start-up for Helpica's CEO is critical to be informed of negative feedback so the issue can be quickly addressed.<br> 
+![3_MAKE_Sentiment Analysis](https://github.com/DigiBP/Team-Watermelons/assets/127488344/c46fb93b-01c9-476f-812e-0896f6bbdee4)<br>
+- HTTP Make a requets: Using "fetchAndLock" get the requets from the service task "identify sentiment".
+- Google Sheets (Search Rows): Based on the business key, indentify the row to select the feedback text.
+- Eden AI (Identify General Sentiment of a Text): Via API identify the sentiment analysis from the text using IBM as provider.
+- Google Sheets (Update a Row): Update the result of the sentiment analysis in the Google Sheets in the row previously identified. If the text is too short and IBM cannot identify the sentiment, a neutral sentiment is saved to ensure a value is always sent back to Camunda.<br>
+![6_MAKE_Sentiment analyis details](https://github.com/DigiBP/Team-Watermelons/assets/127488344/fde87670-ed3c-4e96-acc8-27d22d4adeb6)<br>
+- HTTP (Make a Request): Send the result of the sentiment analysis to Camunda.
 
 
-## Camunda workflow 1: request distribution and first assessment of the request
-
+## Camunda workflow 1: request distribution and first assessment of the request<br>
 **notable limitations of Camunda 7**
-Camunda 7, does not support conditions.  The integrated form into the task, could benefit from conditions regarding usability. An option would be to put forms in each user task directly. But since changes must be added to each user task individually, it is highly error-prone. Therefore the team decided to have a general form
+Camunda 7, does not support conditions.  The integrated form into the task, could benefit from conditions regarding usability. An option would be to put forms in each user task directly. But since changes must be added to each user task individually, it is highly error-prone. Therefore the team decided to have a general form<br>
+![Form1](https://github.com/DigiBP/Team-Watermelons/assets/127504730/457a3fb9-06d8-44f6-a831-d006d64ad13e)<br>
 
-## Make Scenario 3: First feedback to customer
-![4_Additiona Feedback Reply Customer](https://github.com/DigiBP/Team-Watermelons/assets/127488344/2fb68b57-8d4c-4d2f-a0a5-382f5d1638ea)
+
+## Make Scenario 3: First reply to customer
+This scenario is responsible for sending the reply to the customer. It checks if additional information is needed before sending the e-mail.<br>
+![4_Additiona Feedback Reply Customer](https://github.com/DigiBP/Team-Watermelons/assets/127488344/2fb68b57-8d4c-4d2f-a0a5-382f5d1638ea)<br>
+- HTTP (Make a request): HTTP Make a requets: Using "fetchAndLock" get the requets from the service task "ask for additional information".
+- Google Sheets (Search Rows): Based on the business key, indentify the row to be updated.
+- Google Sheets (Update a Row): Update the row with the "Feedback Needed" ("yes" or "no") and the "reply text".
+- Router: Check if the result of the "Feedback Needed" is "yes" or "no" and set the route accordingly.
+- Gmail (Send an email): Send the reply to the customer, either the final reply or asking for further information.
+- HTTP (Make a request): Send the process back to Camunda.
 
 ## Camunda Workflow 2: 
 
