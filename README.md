@@ -98,7 +98,8 @@ The process is automated and digitalized and many pains are relived and gains cr
 ## Make Scenario 1: Pre-process task
 In MAKE an automated pre-process task is creating **a case number**. <br>
 Once the **case number** is created an automated e-mail will be sent to the requester to acknowledge the request stating the **case request**.<br>
-<br>
+![acknowledgement](https://github.com/DigiBP/Team-Watermelons/assets/127504730/e840e012-2537-4608-9cca-522b5d362195)<br>
+
 ![Feedback received](https://github.com/DigiBP/Team-Watermelons/assets/127488344/73a225b4-698c-4cdb-90f1-ef3bb0200e22)<br>
 <br>
 - Google Sheets (Watch New Rows): Check for new entries from the form google sheet
@@ -126,8 +127,10 @@ Camunda 7, does not support conditions.  The integrated form into the task, coul
 ![Form1](https://github.com/DigiBP/Team-Watermelons/assets/127504730/457a3fb9-06d8-44f6-a831-d006d64ad13e)<br>
 
 
-## Make Scenario 3: First reply to customer
+## Make Scenario 3: Reply to customer
 This scenario is responsible for sending the reply to the customer. It checks if additional information is needed before sending the e-mail.<br>
+![reply2](https://github.com/DigiBP/Team-Watermelons/assets/127504730/74ae4831-5c42-42e7-96e8-a09f036d618f)<br>
+
 ![4_Additiona Feedback Reply Customer](https://github.com/DigiBP/Team-Watermelons/assets/127488344/2fb68b57-8d4c-4d2f-a0a5-382f5d1638ea)<br>
 - HTTP (Make a request): HTTP Make a requets: Using "fetchAndLock" get the requets from the service task "ask for additional information".
 - Google Sheets (Search Rows): Based on the business key, indentify the row to be updated.
@@ -140,9 +143,9 @@ This scenario is responsible for sending the reply to the customer. It checks if
 ![Form2](https://github.com/DigiBP/Team-Watermelons/assets/127504730/aeba6db3-0a9d-4d8b-9629-0e521632c64d)<br>
 
 
-## Make Scenario 4: Closing of the request
-
+## Make Scenario 4: Check additional feedback from customer<br>
 Check Helpica's inbox for the customer further information feedback email. There is a rule in gmail to set "Helpica Cases New" label for new emails.<br>
+
 ![5_MAKE_Check inbox for reply](https://github.com/DigiBP/Team-Watermelons/assets/127488344/8c0518da-826d-4bd8-b80d-b63d82e44d17)<br>
 - Gmail (watch emails): Check for new email in "Helpica Cases New" folder (label) which contains "Case Number" in the subject.
 - Gmail (Move an email): Move the email from "Helpica Cases New" to Helpica Cases Archive" based on email's UID.
