@@ -139,6 +139,16 @@ Further one possible "Technical error" could occur, due to wrong entered email f
 -	but customer satisfaction could suffer if the customer does not receive feedback. Even though if he has initially given wrong data
 
 ## Conclusion
+- valuable Inputs to helpica
+- Eliminating pain points
+- underestimated configurations in Make: high workload / lot of lessons learned
+-  biggest challenges: parser in make --> we didn't know the small tricks
+-  greatest archievement: finding a soluation to include Sentiment Analysis with Make (was not easy). A working workflow, happy stakeholders
+- AI is really promising : we included sentiment analysis --> valuable for Helpica
+- great collaboration with all the lecturers/coaches, great support from Maja!
+- was great to work on Helpica (already worked on that case in the previous semester in ABA)
+
+
 [Assessment 1: Scenario is innovative and user experience is addressed 10%]
 [Assessment 2: Processes are standard compliant and are reflecting conventions. Implementations realise the business processes and workflows are running 10%] <br>
 [Assessment 3: Human-centric interfaces are provided. Human tasks are managed.10%]<br>
