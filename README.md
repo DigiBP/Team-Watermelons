@@ -136,11 +136,23 @@ This scenario is responsible for sending the reply to the customer. It checks if
 - Gmail (Send an email): Send the reply to the customer, either the final reply or asking for further information.
 - HTTP (Make a request): Send the process back to Camunda.
 
-## Camunda Workflow 2: 
+## Camunda Workflow 2:<br> 
+![Form2](https://github.com/DigiBP/Team-Watermelons/assets/127504730/707f71c5-d2f7-40e6-9a68-6fe11aa4fbf8)<br>
 
 ## Make Scenario 4: Closing of the request
-![5_MAKE_Check inbox for reply](https://github.com/DigiBP/Team-Watermelons/assets/127488344/8c0518da-826d-4bd8-b80d-b63d82e44d17)
-![7_MAKE_Parser](https://github.com/DigiBP/Team-Watermelons/assets/127488344/b2690ad0-629e-4098-b3c8-c8ce217059e5)
+Check Helpica's inbox for the customer further information feedback email. There is a rule in gmail to set "Helpica Cases New" label for new emails.<br>
+![5_MAKE_Check inbox for reply](https://github.com/DigiBP/Team-Watermelons/assets/127488344/8c0518da-826d-4bd8-b80d-b63d82e44d17)<br>
+- Gmail (watch emails): Check for new email in "Helpica Cases New" folder (label) which contains "Case Number" in the subject.
+- Gmail (Move an email): Move the email from "Helpica Cases New" to Helpica Cases Archive" based on email's UID.
+- Text paser (Match pattern (Advanced)): Select only the case number (business key) from the email's subject.
+- Text paser (Match pattern (Advanced)): Split the email body between Helpica reply and customer feedback and select only the customer feedback. (Necessary due Camunda 7 limitaion - "A <Textarea> is not supported by Camunda Platform 7.18")
+- Text parser (Replace): Replace from the customer feedback newline (line feed) by space. (Necessary due Camunda 7 limitaion - "A <Textarea> is not supported by Camunda Platform 7.18").<br>
+![7_MAKE_Parser](https://github.com/DigiBP/Team-Watermelons/assets/127488344/b2690ad0-629e-4098-b3c8-c8ce217059e5)<br>
+- Tools (Set variable): Create a variable out of the customer feedback text. Necessary to use in HTTP (Make a request).
+- Google Sheets (Search Rows): Indentify the row to be updated based on the business key.
+- Google Sheets (Update a Row): Update the last customer feedback into the google sheets.
+- HTTP (Make a request): Send the process back to Camunda with the additional feedback from the customer.
+  
 
 
 ## Outlook
