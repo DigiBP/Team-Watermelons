@@ -98,13 +98,18 @@ The process is automated and digitalized and many pains are relived and gains cr
 ## Make Scenario 1: Pre-process task
 In MAKE an automated pre-process task is creating **a case number**. <br>
 <br>
-The case number is created by the means of random formula preceeded by the number of the current year to ensure that no duplication happens. <br>
-<br>
-![Business key creation](https://github.com/DigiBP/Team-Watermelons/assets/127488344/ccf36889-f4e8-4c47-bdb2-2ce8af5e9a17)<br>
-<br>
 Once the **case number** is created an automated e-mail will be sent to the requester to acknowledge the request stating the **case number**.<br>
 <br>
 ![Feedback received](https://github.com/DigiBP/Team-Watermelons/assets/127488344/73a225b4-698c-4cdb-90f1-ef3bb0200e22)<br>
+<br>
+- Google Sheets (Watch New Rows): Check for new entries from the form google sheet
+- Tools (Set variable): Create the case number (business key) by the means of random formula with the current year as perfix to ensure that no duplication happens.
+![Business key creation](https://github.com/DigiBP/Team-Watermelons/assets/127488344/ccf36889-f4e8-4c47-bdb2-2ce8af5e9a17)<br>
+<br>
+- Google Sheets (Update a Row): Update the case number (business key) in the google sheets.
+- Gmail (Send an email): Send to the requester an acknowledgement email with the case number.
+- HTTP (Make a request): Start the process in Camunda and send the following information - Name, E-mail, Feedback Type, Customer Feedback, Phone and Case Number (business key).
+
 
 ## Make Scenario 2: Sentiment analysis 
 Neutral to make sure that a value is always send back to Camunda (in case it can't recognize at all)
