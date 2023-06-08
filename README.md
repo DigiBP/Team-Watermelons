@@ -105,8 +105,8 @@ In MAKE an automated pre-process task is creating **a case number**.
 
 Once the **case number** is created an automated e-mail will be sent to the requester to acknowledge the request stating the **case request**.
 <br>
-
-![acknowledgement](https://github.com/DigiBP/Team-Watermelons/assets/127504730/e840e012-2537-4608-9cca-522b5d362195)<br>
+| <img src="https://github.com/DigiBP/Team-Watermelons/assets/127504730/e840e012-2537-4608-9cca-522b5d362195" width="520">                        |
+| --------------------------------------|
 
 <br>
 
@@ -152,7 +152,6 @@ Camunda 7 does not support conditions. The integrated form in the task could ben
 ## Make Scenario 3: Reply to customer
 This scenario is responsible for sending the reply to the customer. It checks if additional information is needed before sending the e-mail.
 <br>
-
 ![reply2](https://github.com/DigiBP/Team-Watermelons/assets/127504730/74ae4831-5c42-42e7-96e8-a09f036d618f)<br>
 <br>
 ![4_Additiona Feedback Reply Customer](https://github.com/DigiBP/Team-Watermelons/assets/127488344/2fb68b57-8d4c-4d2f-a0a5-382f5d1638ea)<br>
