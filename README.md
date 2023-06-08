@@ -204,7 +204,8 @@ One of the most underestimated aspects we encountered during the project was the
 
 However, our greatest achievement was finding a solution to incorporate the sentiment analysis with MAKE. This task was far from easy, but with perseverance and determination, we managed to develop a working workflow. The inclusion of the sentiment analysis addes immense value to Helpica, enhancing its capabilities and user experience. The project demonstrated the immense promise of AI, especially with the successful integration of sentiment analysis. We witnessed firsthand how this technology can provide valuable insights for Helpica and significantly improve its performance.
 
-None of this would have been possible without the great collaboration among all the lecturers and coaches involved in the project. Their support, guidance, and expertise were instrumental in overcoming challenges and achieving our goals. A special mention goes to Maja, whose tireless support significantly contributed to our success.
+None of this would have been possible without the great collaboration among all the lecturers and coaches involved in the project. Their support, guidance, and expertise were instrumental in overcoming challenges and achieving our goals. 
+A special mention goes to Maja, whose tireless support significantly contributed to our success.
 
 We enjoyed continuing to work on the Helpica project, as this start-up was the outcome of the Agile Business Analysis module in the previous semester. Building upon our prior experience, we are proud of the progress made and the positive impact we have created.
 We look forward to share our results with the rest of the helpica team and refining and expanding Helpica's capabilities in the future.
