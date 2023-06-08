@@ -54,46 +54,46 @@ Further, from a customer's perspective, the process is not ideal because...
 
 # To-Be-process feedback system ❇️
 
-A to-be-process is created to tackle the pain point of helpica and its customers. With the integration of automation and digitalization, the feedback management process should be improved and relieve the pain points.
+A to-be-process is created to tackle the pain points of helpica and its customers. With the integration of automation and digitalization, the feedback management process should be improved and relieve the pain points.
 
 **Highlevel overview of process optimisations**
--	Feedback/Request Form
--	Automated case-Number generation & acknowledgement of receipt
--	Sentiment analysis of Feedback/request
+-	Feedback/request form
+-	Automated case-number generation & acknowledgement of receipt
+-	Sentiment analysis of feedback/request
 -	Case distribution to the correct department based on a decision table
--	Standardized process for the case, that additional information are needed
--	Automated Timer with defined time period – when a ticket is closed automatically
--	Former closing of a case
+-	Standardized process in case that additional information is needed
+-	Automated timer with defined time period – after that a ticket is closed automatically
+-	Formal closing of a case
 -	Centralized and structured collection of all data
 
 The following figure shows the created To-Be process:
 ![BPMN_Helpica_To_Be_FINAL](https://github.com/DigiBP/Team-Watermelons/assets/127504668/07b8fc92-40e2-4ae1-9750-f0af882098c1)
 
 **Description of the To-Be Process**
-- To contact Helpica, a feedback form is implemented in Google Forms. With this, a standardized way to already, have structured data, right before the process is kicked of, is ensured.  Depending on the Feedback-Type, the required data fields appear (forms includes conditions). The customers are guided through the form.
+- To contact Helpica, a feedback form is implemented in Google Forms. With this, it is ensured that data is collected in a standardized and structured way, event right before the process is kicked of. Depending on the feedback-type, the required data fields appear (forms includes conditions). The customers are guided through the form.
 - As soon as the form is filled and send out, an automated process creates **a unique case number** and confirmation mail with the case-number is send immediately to the requester.
-- In a next step, Sentiment analysis is performed to identify the sentiment of the request
-- The feedback is then distributed to the correct department, considering "Feedback Type" and "Sentiment".
+- In a next step, a sentiment analysis is performed to identify the feeling of the request.
+- The feedback is then distributed to the correct department, considering "feedback type" and "sentiment".
 
 | <img src="https://github.com/DigiBP/Team-Watermelons/assets/127504668/45df5491-9030-437c-b364-cf1f73b8dde8" width="320">                        | <img src="https://github.com/DigiBP/Team-Watermelons/assets/127504668/cbd456c6-2259-49f6-998c-f90fdebaaff0" width="820">                                   |
 | --------------------------------------| ------------------------------------------------ |
 
-- The corresponding department receives the task with all Case-Details. The case is then solved (assessing, checking internal systems etc.)
+- The corresponding department receives the task with all case details. The case is then solved (assessing, checking internal systems etc.)
   - If no additional information is needed to solve the task, the customer is informed about the solution, and the ticket is closed. 
-  - If additional information is needed, the customer is being asked for the required information. In this case, an automated Mail is sent to the customer. If a response is received within two days, the task is distributed to the corresponding department again; if not, the customer is informed that the ticket will be closed.
+  - If additional information is needed, the customer is being asked for further information. In this case, an automated mail is sent to the customer. If a response is received within two days, the task is distributed to the corresponding department again; if not, the customer is informed that the ticket will be closed.
   
  **notable remarks due to limitations of Camunda**
- - A Timer had been integrated to the model after the sentiment analysis to ensure, that the datarows are updated correctly. Further Camunda 7 has some unknown issues,  if a user task is followed after a service task.
- - In the decision table we switched to the Hit-Policy "First" since Camunda has some issues with it. Based on the input from our expert/coach we changed it. After this change everytime it worked :)
+ - A timer had been integrated to the model after the sentiment analysis to ensure, that the data rows are updated correctly. Further Camunda 7 has some unknown issues,  if a user task is followed after a service task.
+ - Based on the input from our expert/coach we switched in the decision table from [Lavina: what did we have before first ?] to the hit-policy "First" since Camunda had some issues with it. After implementing this change, we didn't face any longer issues.  
 
 ## Benefits of the To-Be Process 💪🏼😄
 The process is automated and digitalized and many pains are relived and gains created: 
--	The usage of form allows **storing structured data** at the very beginning of the process
--	An **automated Case-ID** helps to facilitate the overview of all cases for helpica
+-	The usage of the form allows **storing structured data** at the very beginning of the process
+-	An **automated case-number** helps to facilitate the overview of all cases for helpica
 -	**Automated confirmation** of the request receipt eliminates uncertainties of customers who are wondering if their request has reached helpica.
--	The performed **sentiment analysis support prioritizing** requests
+-	The performed **sentiment analysis supports prioritizing** requests
 -	**Time savings** for Helpica, since requests are allocated to the department and a standardized process is followed across all departments
--	**Quicker Handling** of the requests. Customers are replied much faster
+-	**Quicker handling** of the requests. Customers receive replies much faster
 -	**Structured data**: all the data is collected in a structured form
 
 
