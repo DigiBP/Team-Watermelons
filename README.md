@@ -11,7 +11,7 @@ Supervisor: Maja Spahic
 
 
 # About helpica.ch ℹ️ 
-Helpica.ch is a start-up which aims to position itself as Switzerland’s leading cross-generational multi-sided platform that brings together people who cannot perform daily tasks on their own and seek for Helpies. Helpies are individuals (with a kind heart) who want to offer their support. This can be from simple routine tasks like grocery shopping to more challenging tasks like assembling furniture. Helpica.ch wants to create a network of verified Helpies to create a serving landscape where caregivers can find a trusted Helpie to support a beloved one at one finger click.
+helpica.ch is a start-up which aims to position itself as Switzerland’s leading cross-generational multi-sided platform that brings together people who cannot perform daily tasks on their own and seek for Helpies. Helpies are individuals (with a kind heart) who want to offer their support. This can be from simple routine tasks like grocery shopping to more challenging tasks like assembling furniture. helpica.ch wants to create a network of verified Helpies to create a serving landscape where caregivers can find a trusted Helpie to support a beloved one at one finger click.
 
 ![helpica](https://github.com/DigiBP/Team-Watermelons/assets/127504668/08933a63-031f-4c4e-9f80-953ab6d94be4)
 
@@ -24,23 +24,23 @@ The aim of the feedack system is to offer the opportunity to both caregivers and
 5. Place a complaint
 6. Request an investigation for a payment issue
 
-Helpica.ch strives to digitalize its supporting processes. With their innovative business idea, they focus on delivering and developing a user-friendly App. Nevertheless, for the founder of Helpica and his team it is essential that also processes around the app, in this case the feedback-management process, is efficient, and paint points of today's as-is process are eliminated. 
+helpica.ch strives to digitalize its supporting processes. With their innovative business idea, they focus on delivering and developing a user-friendly App. Nevertheless, for the founder of helpica.ch and his team it is essential that also processes around the app, in this case the feedback-management process, is efficient, and paint points of today's as-is process are eliminated. 
 
 # Current As-Is Process 🔍 
-The following figure, shows the current feedback-management process of Helpica.
+The following figure, shows the current feedback-management process of helpica.ch.
 
 ![BPMN_Helpica_As_Is_FINAL](https://github.com/DigiBP/Team-Watermelons/assets/127504668/ea249a22-046d-4739-b7b8-0b99ae4716fc)
 
-The current Feedback management process of Helpica contains many user tasks. If a Helpie or Caregiver (in the following referred to “Customers”) want to make a request (e.g. give general feedback, make a feature request, make a complaint etc.) they have to search on helpica.ch for the contact data and write an e-mail or they fill in the contact us form. <br>
+The current Feedback management process of helpica.ch contains many user tasks. If a Helpie or Caregiver (in the following referred to “Customers”) want to make a request (e.g. give general feedback, make a feature request, make a complaint etc.) they have to search on helpica.ch for the contact data and write an e-mail or they fill in the contact us form. <br>
 
 ![As-Is Contact us](https://github.com/DigiBP/Team-Watermelons/assets/127488344/0b558baa-8eaa-4ee3-82bb-c2b983b1810d)<br>
 
-Helpica then receives an e-mail. The handling feedbacks/requests lies within the responsibility of the 1st Level support. The First Level Support accesses the request. It is checked if all needed information are available. If all information are available ,the 1st Level Support tries to solve the issue. If the final solution can be provided by the 1st Level, a response is send to the requester. If it is not possible to solve the issue, the request is sent to the 2nd Level Support.
+helpica.ch then receives an e-mail. The handling feedbacks/requests lies within the responsibility of the 1st Level support. The First Level Support accesses the request. It is checked if all needed information are available. If all information are available ,the 1st Level Support tries to solve the issue. If the final solution can be provided by the 1st Level, a response is send to the requester. If it is not possible to solve the issue, the request is sent to the 2nd Level Support.
 
 The request is assessed by the second Level support. If the 2nd Level Support can solve the issue, the issue is solved. If it is not possible to solve the request, it is escalated to the CEO. The CEO then solves the issue. The response of a solved Issue is send to the customer by the 1st Level support.
 
 ## Pain points - Issues with the current process 😕
-The process is completely manual and doesn't take advantage of automation and digitalization. This is not ideal from the perspective of Helpica because...
+The process is completely manual and doesn't take advantage of automation and digitalization. This is not ideal from the perspective of helpica.ch because...
 * it is **time consuming** and it might require more time to complete than an automated process. Hence, it can slow down the productivity and increase the risk of errors. 
 * it is **error-prone** as human processes lead inevitably to mistakes, inaccuracies, and inconsistencies in the work.
 * it is **cost intensive** in the long run. 
@@ -72,7 +72,7 @@ The following figure shows the created To-Be process:
 ![BPMN_Helpica_To_Be_FINAL](https://github.com/DigiBP/Team-Watermelons/assets/127504668/07b8fc92-40e2-4ae1-9750-f0af882098c1)
 
 **Description of the To-Be Process**
-- To contact Helpica, a feedback form is implemented in Google Forms. With this, it is ensured that data is collected in a standardized and structured way, event right before the process is kicked of. Depending on the feedback-type, the required data fields appear (forms includes conditions). The customers are guided through the form.
+- To contact helpica.ch, a feedback form is implemented in Google Forms. With this, it is ensured that data is collected in a standardized and structured way, event right before the process is kicked of. Depending on the feedback-type, the required data fields appear (forms includes conditions). The customers are guided through the form.
 - As soon as the form is filled and send out, an automated process creates **a unique case number** and confirmation mail with the case-number is send immediately to the requester.
 - In a next step, a sentiment analysis is performed to identify the feeling of the request.
 - The feedback is then distributed to the correct department, considering "feedback type" and "sentiment".
@@ -91,10 +91,10 @@ The following figure shows the created To-Be process:
 ## Benefits of the To-Be Process 💪🏼😄
 The process is automated and digitalized and many pains are relived and gains created: 
 -	The usage of the form allows **storing structured data** at the very beginning of the process
--	An **automated case-number** helps to facilitate the overview of all cases for helpica
--	**Automated confirmation** of the request receipt eliminates uncertainties of customers who are wondering if their request has reached helpica.
+-	An **automated case-number** helps to facilitate the overview of all cases for helpica.ch
+-	**Automated confirmation** of the request receipt eliminates uncertainties of customers who are wondering if their request has reached helpica.ch
 -	The performed **sentiment analysis supports prioritizing** requests
--	**Time savings** for Helpica, since requests are allocated to the department and a standardized process is followed across all departments
+-	**Time savings** for helpica.ch, since requests are allocated to the department and a standardized process is followed across all departments
 -	**Quicker handling** of the requests. Customers receive replies much faster
 -	**Structured data**: all the data is collected in a structured form
 
@@ -202,11 +202,11 @@ By working on the digitalization of the feedback process we are able to create a
 
 One of the most underestimated aspects we encountered during the project was the configurations in MAKE. With a high workload and numerous lessons learned, we soon realized the significance of understanding the complexities involved. One of the biggest challenges we faced was the parser in MAKE, where we initially lacked knowledge of certain small tricks that proved crucial for efficient implementation.
 
-However, our greatest achievement was finding a solution to incorporate the sentiment analysis with MAKE. This task was far from easy, but with perseverance and determination, we managed to develop a working workflow. The inclusion of the sentiment analysis addes immense value to Helpica, enhancing its capabilities and user experience. The project demonstrated the immense promise of AI, especially with the successful integration of sentiment analysis. We witnessed firsthand how this technology can provide valuable insights for Helpica and significantly improve its performance.
+However, our greatest achievement was finding a solution to incorporate the sentiment analysis with MAKE. This task was far from easy, but with perseverance and determination, we managed to develop a working workflow. The inclusion of the sentiment analysis addes immense value to helpica.ch, enhancing its capabilities and user experience. The project demonstrated the immense promise of AI, especially with the successful integration of sentiment analysis. We witnessed firsthand how this technology can provide valuable insights for helpica.ch and significantly improve its performance.
 
 None of this would have been possible without the great collaboration among all the lecturers and coaches involved in the project. Their support, guidance, and expertise were instrumental in overcoming challenges and achieving our goals. 
 A special mention goes to Maja, whose tireless support significantly contributed to our success.
 
-We enjoyed continuing to work on the Helpica project, as this start-up was the outcome of the Agile Business Analysis module in the previous semester. Building upon our prior experience, we are proud of the progress made and the positive impact we have created.
-We look forward to share our results with the rest of the helpica team and refining and expanding Helpica's capabilities in the future.
+We enjoyed continuing to work on the helpica.ch project, as this start-up was the outcome of the Agile Business Analysis module in the previous semester. Building upon our prior experience, we are proud of the progress made and the positive impact we have created.
+We look forward to share our results with the rest of the helpica.ch team and refining and expanding its capabilities in the future.
 
