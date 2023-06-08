@@ -108,6 +108,8 @@ Once the **case number** is created an automated e-mail will be sent to the requ
 
 ![acknowledgement](https://github.com/DigiBP/Team-Watermelons/assets/127504730/e840e012-2537-4608-9cca-522b5d362195)<br>
 
+<br>
+
 ![Feedback received](https://github.com/DigiBP/Team-Watermelons/assets/127488344/73a225b4-698c-4cdb-90f1-ef3bb0200e22)<br>
 <br>
 - Google Sheets (Watch New Rows): Check for new entries from the form google sheet
