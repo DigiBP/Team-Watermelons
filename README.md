@@ -134,7 +134,9 @@ This scenario performs the sentiment analysis of the customer's feedback. As a s
 - Google Sheets (Search Rows): Based on the business key, indentify the row to select the feedback text.
 - Eden AI (Identify General Sentiment of a Text): Via API identify the sentiment analysis from the text using IBM as provider.
 - Google Sheets (Update a Row): Update the result of the sentiment analysis in the Google Sheets in the row previously identified. If the text is too short and IBM cannot identify the sentiment, a neutral sentiment is saved to ensure a value is always sent back to Camunda.<br>
-![6_MAKE_Sentiment analyis details](https://github.com/DigiBP/Team-Watermelons/assets/127488344/fde87670-ed3c-4e96-acc8-27d22d4adeb6)<br>
+
+![6_MAKE_Sentiment analyis details](https://github.com/DigiBP/Team-Watermelons/assets/127488344/07198659-317e-4998-84cd-ec95e553cf65)
+
 - HTTP (Make a Request): Send the result of the sentiment analysis to Camunda.
 
 
