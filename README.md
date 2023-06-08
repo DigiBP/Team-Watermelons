@@ -84,8 +84,8 @@ The following figure shows the created To-Be process:
   - If no additional information is needed to solve the task, the customer is informed about the solution, and the ticket is closed. 
   - If additional information is needed, the customer is being asked for further information. In this case, an automated mail is sent to the customer. If a response is received within two days, the task is distributed to the corresponding department again; if not, the customer is informed that the ticket will be closed.
   
- **notable remarks due to limitations of Camunda**
- - A timer had been integrated to the model after the sentiment analysis to ensure, that the data rows are updated correctly. Further Camunda 7 has some unknown issues,  if a user task is followed after a service task.
+ **Notable remarks due to limitations of Camunda**
+ - A timer has been integrated to the model after the sentiment analysis to ensure, that the data rows are updated correctly. Further Camunda 7 has some unknown issues,  if a user task is followed after a service task.
  - Based on the input from our expert/coach we switched in the decision table from [Lavina: what did we have before first ?] to the hit-policy "First" since Camunda had some issues with it. After implementing this change, we didn't face any longer issues.  
 
 ## Benefits of the To-Be Process 💪🏼😄
