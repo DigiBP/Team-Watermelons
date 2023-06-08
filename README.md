@@ -114,7 +114,11 @@ Once the **case number** is created an automated e-mail will be sent to the requ
 <br>
 - Google Sheets (Watch New Rows): Check for new entries from the form google sheet
 - Tools (Set variable): Create the case number (business key) by the means of random formula with the current year as perfix to ensure that no duplication happens.<br>
-![Business key creation](https://github.com/DigiBP/Team-Watermelons/assets/127488344/ccf36889-f4e8-4c47-bdb2-2ce8af5e9a17)<br>
+
+![2_MAKE_Business key details](https://github.com/DigiBP/Team-Watermelons/assets/127488344/563679f6-6af1-48c9-85b8-434b2ab28db0)
+
+<br>
+
 - Google Sheets (Update a Row): Update the case number (business key) in the google sheets.
 - Gmail (Send an email): Send to the requester an acknowledgement email with the case number.
 - HTTP (Make a request): Start the process in Camunda and send the following information - Name, E-mail, Feedback Type, Customer Feedback, Phone and Case Number (business key).
