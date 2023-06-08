@@ -73,6 +73,10 @@ The following figure shows the created To-Be process:
 
 **Description of the To-Be Process**
 - To contact helpica.ch, a feedback form is implemented in Google Forms. With this, it is ensured that data is collected in a standardized and structured way, event right before the process is kicked of. Depending on the feedback-type, the required data fields appear (forms includes conditions). The customers are guided through the form.
+<br>
+![helpica_form](https://github.com/DigiBP/Team-Watermelons/assets/127488344/bb4aa5a2-3e76-4665-b43e-2076047e90c7)
+<br>
+
 - As soon as the form is filled and send out, an automated process creates **a unique case number** and confirmation mail with the case-number is send immediately to the requester.
 - In a next step, a sentiment analysis is performed to identify the feeling of the request.
 - The feedback is then distributed to the correct department, considering "feedback type" and "sentiment".
@@ -196,7 +200,7 @@ All processes can be continuously improved. Possible enhancements for the future
 # Conclusion 🔚
 
 In conclusion we would like to highlight our journey, challenges faced, and collaborative efforts that led to successful outcomes.
-By working on the digitalization of the feedback process we are able to create and share valuable inputs for helpica.ch. Our solution helpes in eliminating several pain points and enhances the overall workflow. 
+By working on the digitalization of the feedback process we are able to create and share valuable inputs for helpica.ch. Our solution helps in eliminating several pain points and enhances the overall workflow. 
 
 One of the most underestimated aspects we encountered during the project was the configurations in MAKE. With a high workload and numerous lessons learned, we soon realized the significance of understanding the complexities involved. One of the biggest challenges we faced was the parser in MAKE, where we initially lacked knowledge of certain small tricks that proved crucial for efficient implementation.
 
