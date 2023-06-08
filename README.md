@@ -73,9 +73,10 @@ The following figure shows the created To-Be process:
 
 **Description of the To-Be Process**
 - To contact helpica.ch, a feedback form is implemented in Google Forms. With this, it is ensured that data is collected in a standardized and structured way, event right before the process is kicked of. Depending on the feedback-type, the required data fields appear (forms includes conditions). The customers are guided through the form.
-<br>
+
 ![helpica_form](https://github.com/DigiBP/Team-Watermelons/assets/127488344/bb4aa5a2-3e76-4665-b43e-2076047e90c7)
-<br>
+
+
 
 - As soon as the form is filled and send out, an automated process creates **a unique case number** and confirmation mail with the case-number is send immediately to the requester.
 - In a next step, a sentiment analysis is performed to identify the feeling of the request.
@@ -204,7 +205,7 @@ By working on the digitalization of the feedback process we are able to create a
 
 One of the most underestimated aspects we encountered during the project was the configurations in MAKE. With a high workload and numerous lessons learned, we soon realized the significance of understanding the complexities involved. One of the biggest challenges we faced was the parser in MAKE, where we initially lacked knowledge of certain small tricks that proved crucial for efficient implementation.
 
-However, our greatest achievement was finding a solution to incorporate the sentiment analysis with MAKE. This task was far from easy, but with perseverance and determination, we managed to develop a working workflow. The inclusion of the sentiment analysis addes immense value to helpica.ch, enhancing its capabilities and user experience. The project demonstrated the immense promise of AI, especially with the successful integration of sentiment analysis. We witnessed firsthand how this technology can provide valuable insights for helpica.ch and significantly improve its performance.
+However, our greatest achievement was finding a solution to incorporate the sentiment analysis with MAKE. This task was far from easy, because there are several providers that can be used and our limited knowledge and also budget constraints made the research laborious. But with perseverance and determination, we managed to develop find the righ one and implement it in a working workflow. The inclusion of the sentiment analysis addes immense value to helpica.ch, enhancing its capabilities and user experience. The project demonstrated the immense promise of AI, especially with the successful integration of sentiment analysis. We witnessed firsthand how this technology can provide valuable insights for helpica.ch and significantly improve its performance.
 
 None of this would have been possible without the great collaboration among all the lecturers and coaches involved in the project. Their support, guidance, and expertise were instrumental in overcoming challenges and achieving our goals. 
 A special mention goes to Maja, whose tireless support significantly contributed to our success.
