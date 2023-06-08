@@ -49,8 +49,8 @@ The process is completely manual and doesn't take advantage of automation and di
 * it is **difficult to track and monitor** requests which can make it challenging to identify and address issues in a timely manner.
 
 Further, from a customer's perspective, the process is not ideal because...
-* The customer does **not receive any confirmation** of receiving the request
-* **long reposonse time**. The customers might become impatient and feeling helpless when clarification is needed
+* The customer does **not receive any confirmation** of having send a request.
+* **long reposonse time**. The customers might become impatient and feeling helpless when clarification is needed.
 
 # To-Be-process feedback system ❇️
 
