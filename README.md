@@ -40,7 +40,7 @@ Helpica then receives an e-mail. The handling feedbacks/requests lies within the
 The request is assessed by the second Level support. If the 2nd Level Support can solve the issue, the issue is solved. If it is not possible to solve the request, it is escalated to the CEO. The CEO then solves the issue. The response of a solved Issue is send to the customer by the 1st Level support.
 
 ## Pain points - Issues with the current process 😕
-The process is completely manual and doesn't take advantage of automation and digitalization. This is not ideal from the perspective of Helpica because..
+The process is completely manual and doesn't take advantage of automation and digitalization. This is not ideal from the perspective of Helpica because...
 * it is **time consuming** and it might require more time to complete than an automated process. Hence, it can slow down the productivity and increase the risk of errors. 
 * it is **error-prone** as human processes lead inevitably to mistakes, inaccuracies, and inconsistencies in the work.
 * it is **cost intensive** in the long run. 
