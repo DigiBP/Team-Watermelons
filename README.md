@@ -74,10 +74,8 @@ The following figure shows the created To-Be process:
 **Description of the To-Be Process**
 - To contact helpica.ch, a feedback form is implemented in Google Forms. With this, it is ensured that data is collected in a standardized and structured way, event right before the process is kicked of. Depending on the feedback-type, the required data fields appear (forms includes conditions). The customers are guided through the form.
 
-![helpica_form](https://github.com/DigiBP/Team-Watermelons/assets/127488344/9f7dd232-8260-461d-bdb6-2a0e2ffcc197)
-
-
-
+<img src="https://github.com/DigiBP/Team-Watermelons/assets/127488344/9f7dd232-8260-461d-bdb6-2a0e2ffcc197" width="420">
+     
 - As soon as the form is filled and send out, an automated process creates **a unique case number** and confirmation mail with the case-number is send immediately to the requester.
 - In a next step, a sentiment analysis is performed to identify the feeling of the request.
 - The feedback is then distributed to the correct department, considering "feedback type" and "sentiment".
@@ -120,9 +118,7 @@ Once the **case number** is created an automated e-mail will be sent to the requ
 - Google Sheets (Watch New Rows): Check for new entries from the form google sheet
 - Tools (Set variable): Create the case number (business key) by the means of random formula with the current year as perfix to ensure that no duplication happens.<br>
 
-![2_MAKE_Business key details](https://github.com/DigiBP/Team-Watermelons/assets/127488344/563679f6-6af1-48c9-85b8-434b2ab28db0)
-
-<br>
+<img src="https://github.com/DigiBP/Team-Watermelons/assets/127488344/563679f6-6af1-48c9-85b8-434b2ab28db0" width="420">
 
 - Google Sheets (Update a Row): Update the case number (business key) in the Google Sheets.
 - Gmail (Send an email): Send to the requester an acknowledgement email with the case number.
@@ -212,7 +208,7 @@ All processes can be continuously improved. Possible enhancements for the future
 - In addition to the created Google- form, a chatbot could be integrated, which asks the questions from the form
 - Error handling: Error handling is an essential aspect of a process. During the design of the To-Bo process, we have included one error handling in make: While performing the sentiment analysis, depending on the inputs, no sentiment is found, e.g. the customer does only write one word). In that case, Eden AI does not detect any sentiment. We catch those cases: If sentiment = null, the sentiment is set to "neutral". Primarily this change had been made to avoid misunderstandings when the case is handled by an Helpica-agent, who then wonders why the field is empty and whether there is something wrong with the own tool 😉
   Further possible enhancement regarding technical error handling can be included for service tasks. For the Service Task "ask additional information," an E-Mail is sent to the requester. If the requester entered the wrong e-mail address or the requester's mailbox is full, the E-Mail does not reach the requester. In this case, currently, the process flow is not interrupted. After two days with no reply, the case will be closed. But to increase customer satisfaction, it can be evaluated if a user task should be integrated to catch such an error. The following shows a possible implementation:
-<img src="https://github.com/DigiBP/Team-Watermelons/assets/127504668/628cb64e-9d23-49d6-a9c2-c1d35af4f5f8" width="520">
+<img src="https://github.com/DigiBP/Team-Watermelons/assets/127504668/628cb64e-9d23-49d6-a9c2-c1d35af4f5f8" width="400">
 
 # Conclusion 🔚
 
