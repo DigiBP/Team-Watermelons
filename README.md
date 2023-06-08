@@ -66,7 +66,7 @@ A to-be-process is created to tackle the pain points of helpica and its customer
 -	Formal closing of a case
 -	Centralized and structured collection of all data
 
-The following figure shows the created To-Be process:
+The following figure shows the created To-Be process:<br>
 ![BPMN_Helpica_To_Be_FINAL](https://github.com/DigiBP/Team-Watermelons/assets/127504668/07b8fc92-40e2-4ae1-9750-f0af882098c1)
 
 **Description of the To-Be Process**
