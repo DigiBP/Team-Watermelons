@@ -141,8 +141,11 @@ This scenario performs the sentiment analysis of the customer's feedback. As a s
 
 
 ## Camunda workflow 1: request distribution and first assessment of the request<br>
-**notable limitations of Camunda 7**
-Camunda 7, does not support conditions.  The integrated form into the task, could benefit from conditions regarding usability. An option would be to put forms in each user task directly. But since changes must be added to each user task individually, it is highly error-prone. Therefore the team decided to have a general form<br>
+**Notable limitations of Camunda 7**<br>
+Camunda 7 does not support conditions. The integrated form in the task could benefit from conditions regarding usability. An option would be to put forms in each user task directly. But since changes must be added to each user task individually, it is highly error-prone. Therefore the team decided to have a general form.
+
+<br>
+
 ![Form1](https://github.com/DigiBP/Team-Watermelons/assets/127504730/457a3fb9-06d8-44f6-a831-d006d64ad13e)<br>
 
 
