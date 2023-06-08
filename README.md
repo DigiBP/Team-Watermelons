@@ -14,7 +14,6 @@ Supervisor: Maja Spahic
 helpica.ch is a start-up which aims to position itself as Switzerland’s leading cross-generational multi-sided platform that brings together people who cannot perform daily tasks on their own and seek for Helpies. Helpies are individuals (with a kind heart) who want to offer their support. This can be from simple routine tasks like grocery shopping to more challenging tasks like assembling furniture. helpica.ch wants to create a network of verified Helpies to create a serving landscape where caregivers can find a trusted Helpie to support a beloved one at one finger click.
 
 ![helpica](https://github.com/DigiBP/Team-Watermelons/assets/127504668/08933a63-031f-4c4e-9f80-953ab6d94be4)
-
 # Case: Feedback system for helpica.ch ℹ️ 
 The aim of the feedack system is to offer the opportunity to both caregivers and Helpies to communicate with the support-team of helpica.ch for the following categories:
 1. General Comments on helpica.ch and its app
@@ -54,7 +53,7 @@ Further, from a customer's perspective, the process is not ideal because...
 
 # To-Be-process feedback system ❇️
 
-A to-be-process is created to tackle the pain points of helpica and its customers. With the integration of automation and digitalization, the feedback management process should be improved and relieve the pain points.
+A to-be-process is created to tackle the pain points of helpica and its customers. With the integration of automation and digitalization, the feedback management process should be improved and relieve the pain points. The to-be process was created based on inputs from Helpica.
 
 **Highlevel overview of process optimisations**
 -	Feedback/request form
@@ -77,8 +76,8 @@ The following figure shows the created To-Be process:
 <img src="https://github.com/DigiBP/Team-Watermelons/assets/127488344/9f7dd232-8260-461d-bdb6-2a0e2ffcc197" width="420">
      
 - As soon as the form is filled and send out, an automated process creates **a unique case number** and confirmation mail with the case-number is send immediately to the requester.
-- In a next step, a sentiment analysis is performed to identify the feeling of the request.
-- The feedback is then distributed to the correct department, considering "feedback type" and "sentiment".
+- In a next step, a **sentiment analysis** is performed to identify the feeling of the request.
+- The case/task is then distributed to the correct department, considering "feedback type" and "sentiment". The 
 
 | <img src="https://github.com/DigiBP/Team-Watermelons/assets/127504668/45df5491-9030-437c-b364-cf1f73b8dde8" width="320">                        | <img src="https://github.com/DigiBP/Team-Watermelons/assets/127504668/cbd456c6-2259-49f6-998c-f90fdebaaff0" width="820">                                   |
 | --------------------------------------| ------------------------------------------------ |
@@ -87,7 +86,7 @@ The following figure shows the created To-Be process:
   - If no additional information is needed to solve the task, the customer is informed about the solution, and the ticket is closed. 
   - If additional information is needed, the customer is being asked for further information. In this case, an automated mail is sent to the customer. If a response is received within two days, the task is distributed to the corresponding department again; if not, the customer is informed that the ticket will be closed.
   
- **Notable remarks due to limitations of Camunda**
+ **Remarks - limitations of Camunda**
  - A timer has been integrated to the model after the sentiment analysis to ensure, that the data rows are updated correctly. Further Camunda 7 has some unknown issues,  if a user task is followed after a service task.
  - Based on the input from our expert/coach we switched in the decision table from "Unique" to the hit-policy "First" since Camunda had some issues with it. After implementing this change, we didn't face any longer issues.  
 
