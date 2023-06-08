@@ -100,8 +100,12 @@ The process is automated and digitalized and many pains are relived and gains cr
 
 
 ## Make Scenario 1: Pre-process task
-In MAKE an automated pre-process task is creating **a case number**. <br>
-Once the **case number** is created an automated e-mail will be sent to the requester to acknowledge the request stating the **case request**.<br>
+In MAKE an automated pre-process task is creating **a case number**. 
+<br>
+
+Once the **case number** is created an automated e-mail will be sent to the requester to acknowledge the request stating the **case request**.
+<br>
+
 ![acknowledgement](https://github.com/DigiBP/Team-Watermelons/assets/127504730/e840e012-2537-4608-9cca-522b5d362195)<br>
 
 ![Feedback received](https://github.com/DigiBP/Team-Watermelons/assets/127488344/73a225b4-698c-4cdb-90f1-ef3bb0200e22)<br>
