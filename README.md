@@ -125,7 +125,9 @@ Once the **case number** is created an automated e-mail will be sent to the requ
 
 
 ## Make Scenario 2: Sentiment analysis 
-This scenario performs the sentiment analysis of the customer's feedback. As a start-up, for Helpica's CEO it is critical to be informed of negative feedback so the issue can be quickly addressed.<br> 
+This scenario performs the sentiment analysis of the customer's feedback. As a start-up, for Helpica's CEO it is critical to be informed of negative feedback so the issue can be quickly addressed.
+<br> 
+
 ![3_MAKE_Sentiment Analysis](https://github.com/DigiBP/Team-Watermelons/assets/127488344/c46fb93b-01c9-476f-812e-0896f6bbdee4)<br>
 - HTTP Make a requets: Using "fetchAndLock" get the requets from the service task "identify sentiment".
 - Google Sheets (Search Rows): Based on the business key, indentify the row to select the feedback text.
