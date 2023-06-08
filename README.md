@@ -189,12 +189,11 @@ Check Helpica's inbox for the customer further information feedback email. There
 
 **Error handling**
 
-During the creation of the to-be processed we saw one important are, where a technical error could occur: While performing the sentiment analysis, depending on the inputs, no sentiment is found (e.g if Customer does only wrtie one word). In that case Eden AI, does not detect any sentiment. 
+During the creation of the to-be processed we saw one important area, where a technical error could occur: While performing the sentiment analysis, depending on the inputs, no sentiment is found (e.g if Customer does only writie one word). In that case Eden AI, does not detect any sentiment. 
 
 We catch those cases: If sentiment = 0, the sentiment is set as neutral. This also avoids misunderstandings when the case is handled by an agent, who then wonders why the field is empty and whether there is something wrong with the own tool 😉
 
-Further one possible "Technical error" could occur, due to wrong entered email from the Customer. In this case currentyl the process-flow itself will not be interrupted.
--	but customer satisfaction could suffer if the customer does not receive feedback. Even though if he has initially given wrong data
+Further, a "technical error" could occur due to wrong entered email from the customer. In this case currently the process-flow itself will not be interrupted. But the customer satisfaction could suffer if the customer does not receive feedback. Even though if he has initially given wrong data.
 
 ## Conclusion
 - valuable Inputs to helpica
@@ -206,12 +205,15 @@ Further one possible "Technical error" could occur, due to wrong entered email f
 - great collaboration with all the lecturers/coaches, great support from Maja!
 - was great to work on Helpica (already worked on that case in the previous semester in ABA)
 
+In conclusion we would like to highlight our journey, challenges faced, and collaborative efforts that led to successful outcomes.
+By working on the digitalization of the feedback process we are able to create and share valuable inputs for helpica.ch. Our solution helpes in eliminating several pain points and enhances the overall workflow. 
 
-[Assessment 1: Scenario is innovative and user experience is addressed 10%]
-[Assessment 2: Processes are standard compliant and are reflecting conventions. Implementations realise the business processes and workflows are running 10%] <br>
-[Assessment 3: Human-centric interfaces are provided. Human tasks are managed.10%]<br>
-[Assessment 4: Service integration is running and orchestration is appropriate. Innovative service automation and/or iSaaS implementation. 10%]<br>
-[Assessment 5: Appropriate, adequate, and innovative inclusion of automated decision making. 10%]<br>
-[Assessment 6: apropriate data model and structured data available. 10%]<br>
-[Assessment 7: logical structure and clarity of documentation. Graphical appearance of documentation. 10%]<br>
-[Assessment 8: Artefacts are good quality and self-explanatory. Deployment and instantiation are running and available. Instantiation, solution and results are reproducible. 10%]<br>
+One of the most underestimated aspects we encountered during the project was the configurations in MAKE. With a high workload and numerous lessons learned, we soon realized the significance of understanding the complexities involved. One of the biggest challenges we faced was the parser in MAKE, where we initially lacked knowledge of certain small tricks that proved crucial for efficient implementation.
+
+However, our greatest achievement was finding a solution to incorporate the sentiment analysis with MAKE. This task was far from easy, but with perseverance and determination, we managed to develop a working workflow. The inclusion of the sentiment analysis addes immense value to Helpica, enhancing its capabilities and user experience. The project demonstrated the immense promise of AI, especially with the successful integration of sentiment analysis. We witnessed firsthand how this technology can provide valuable insights for Helpica and significantly improve its performance.
+
+None of this would have been possible without the great collaboration among all the lecturers and coaches involved in the project. Their support, guidance, and expertise were instrumental in overcoming challenges and achieving our goals. A special mention goes to Maja, whose tireless support significantly contributed to our success.
+
+We enjoyed continuing to work on the Helpica project, as this start-up was the outcome of the Agile Business Analysis module in the previous semester. Building upon our prior experience, we are proud of the progress made and the positive impact we have created.
+We look forward to share our results with the rest of the helpica team and refining and expanding Helpica's capabilities in the future.
+
