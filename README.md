@@ -187,13 +187,13 @@ Check Helpica's inbox for the customer further information feedback email. There
 
 # Outlook 👀
 
-**Error handling**
+All processes can be continuously improved. Possible enhancements for the future are: 
+- The already integrated decision table allows the distribution of the requests to the correct department. Helpica starts with the first setup, and according to experience, the allocation to the internal roles/department can be adjusted flexibly.   
+- In addition to the created Google- form, a chatbot could be integrated, which asks the questions from the form
+- Error handling: Error handling is an essential aspect of a process. During the design of the To-Bo process, we have included one error handling in make: While performing the sentiment analysis, depending on the inputs, no sentiment is found, e.g. the customer does only write one word). In that case, Eden AI does not detect any sentiment. We catch those cases: If sentiment = null, the sentiment is set to "neutral". Primarily this change had been made to avoid misunderstandings when the case is handled by an Helpica-agent, who then wonders why the field is empty and whether there is something wrong with the own tool 😉
+  
+Further possible enhancement regarding technical error handling can be included for service tasks. For the Service Task "ask additional information," an E-Mail is sent to the requester. If the requester entered the wrong e-mail address or the requester's mailbox is full, the E-Mail does not reach the requester. In this case, currently, the process flow is not interrupted. After two days with no reply, the case will be closed. But to increase customer satisfaction, it can be evaluated if a user task should be integrated to catch such an error. The following shows a possible implementation:
 
-During the creation of the to-be processed we saw one important area, where a technical error could occur: While performing the sentiment analysis, depending on the inputs, no sentiment is found (e.g if Customer does only writie one word). In that case Eden AI, does not detect any sentiment. 
-
-We catch those cases: If sentiment = 0, the sentiment is set as neutral. This also avoids misunderstandings when the case is handled by an agent, who then wonders why the field is empty and whether there is something wrong with the own tool 😉
-
-Further, a "technical error" could occur due to wrong entered email from the customer. In this case currently the process-flow itself will not be interrupted. But the customer satisfaction could suffer if the customer does not receive feedback. Even though if he has initially given wrong data.
 
 # Conclusion 🔚
 
