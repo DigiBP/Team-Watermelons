@@ -33,7 +33,7 @@ The following figure, shows the current feedback-management process of helpica.c
 
 The current Feedback management process of helpica.ch contains many user tasks. If a Helpie or Caregiver (in the following referred to “Customers”) want to make a request (e.g. give general feedback, make a feature request, make a complaint etc.) they have to search on helpica.ch for the contact data and write an e-mail or they fill in the contact us form. <br>
 
-![As-Is Contact us](https://github.com/DigiBP/Team-Watermelons/assets/127488344/0b558baa-8eaa-4ee3-82bb-c2b983b1810d)<br>
+<img src="https://github.com/DigiBP/Team-Watermelons/assets/127488344/0b558baa-8eaa-4ee3-82bb-c2b983b1810d" width="520">
 
 helpica.ch then receives an e-mail. The handling feedbacks/requests lies within the responsibility of the 1st Level support. The First Level Support accesses the request. It is checked if all needed information are available. If all information are available ,the 1st Level Support tries to solve the issue. If the final solution can be provided by the 1st Level, a response is send to the requester. If it is not possible to solve the issue, the request is sent to the 2nd Level Support.
 
@@ -136,10 +136,9 @@ This scenario performs the sentiment analysis of the customer's feedback. As a s
 - Eden AI (Identify General Sentiment of a Text): Via API identify the sentiment analysis from the text using IBM as provider.
 - Google Sheets (Update a Row): Update the result of the sentiment analysis in the Google Sheets in the row previously identified. If the text is too short and IBM cannot identify the sentiment, a neutral sentiment is saved to ensure a value is always sent back to Camunda.<br>
 
-![6_MAKE_Sentiment analyis details](https://github.com/DigiBP/Team-Watermelons/assets/127488344/07198659-317e-4998-84cd-ec95e553cf65)
+<img src="https://github.com/DigiBP/Team-Watermelons/assets/127488344/07198659-317e-4998-84cd-ec95e553cf65" width="720">
 
 - HTTP (Make a Request): Send the result of the sentiment analysis to Camunda.
-
 
 ## Camunda workflow 1: request distribution and first assessment of the request<br>
 <br>
@@ -162,6 +161,7 @@ This scenario is responsible for sending the reply to the customer. It checks if
 <br>
 ![reply2](https://github.com/DigiBP/Team-Watermelons/assets/127504730/74ae4831-5c42-42e7-96e8-a09f036d618f)<br>
 <br>
+
 ![4_Additiona Feedback Reply Customer](https://github.com/DigiBP/Team-Watermelons/assets/127488344/2fb68b57-8d4c-4d2f-a0a5-382f5d1638ea)<br>
 - HTTP (Make a request): HTTP Make a request: Using "fetchAndLock" get the requets from the service task "ask for additional information".
 - Google Sheets (Search Rows): Based on the business key, indentify the row to be updated.
@@ -198,8 +198,6 @@ Check Helpica's inbox for the customer further information feedback email. There
 - Google Sheets (Search Rows): Indentify the row to be updated based on the business key.
 - Google Sheets (Update a Row): Update the last customer feedback into the google sheets.
 - HTTP (Make a request): Send the process back to Camunda with the additional feedback from the customer.
-  
-
 
 # Outlook 👀
 
