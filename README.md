@@ -146,13 +146,20 @@ This scenario performs the sentiment analysis of the customer's feedback. As a s
 
 
 ## Camunda workflow 1: request distribution and first assessment of the request<br>
-**Notable limitations of Camunda 7**<br>
-Camunda 7 does not support conditions. The integrated form in the task could benefit from conditions regarding usability. An option would be to put forms in each user task directly. But since changes must be added to each user task individually, it is highly error-prone. Therefore the team decided to have a general form.
-
 <br>
+The request with all information is received by camunda
 
 ![Form1](https://github.com/DigiBP/Team-Watermelons/assets/127504730/457a3fb9-06d8-44f6-a831-d006d64ad13e)<br>
 
+-	The task is assigned to the responsible department according to the decision table. The employees of the responsible department find a new entry in the task list, claim the task and can solve it. 
+-	The Camunda-forms show all data entered by the requester & the output of the sentiment. Based on the sentiment, the employees can easily prioritize. 
+-	The responsible department can solves the issue. It is chosen if additional information is needed:
+o	  If yes, the corresponding field is filled
+o	  If no, a already final solution/feedback is given
+-	A service task will continue with the workflow
+
+**Notable limitations of Camunda 7**<br>
+Camunda 7 does not support conditions. The integrated form in the task could benefit from conditions regarding usability. An option would be to put forms in each user task directly. But since changes must be added to each user task individually, it is highly error-prone. Therefore the team decided to have a general form.
 
 ## Make Scenario 3: Reply to customer
 This scenario is responsible for sending the reply to the customer. It checks if additional information is needed before sending the e-mail.
