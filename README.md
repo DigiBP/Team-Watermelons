@@ -31,9 +31,11 @@ The following figure, shows the current feedback-management process of Helpica.
 
 ![BPMN_Helpica_As_Is_FINAL](https://github.com/DigiBP/Team-Watermelons/assets/127504668/ea249a22-046d-4739-b7b8-0b99ae4716fc)
 
-The current Feedback management process of Helpica contains many user tasks. If a Helpie or Caregiver (in the following referred to “Customers”) want to make a request (e.g. give general feedback, make a feature request, make a complaint etc.) they have to search for the contact data of Helpica and write an e-mail.  
+The current Feedback management process of Helpica contains many user tasks. If a Helpie or Caregiver (in the following referred to “Customers”) want to make a request (e.g. give general feedback, make a feature request, make a complaint etc.) they have to search on helpica.ch for the contact data and write an e-mail or they fill in the contact us form. <br>
 
-The Customer sends an e-mail, which Helpica receives. The handling feedbacks/requests lies within the responsibility of the 1st Level support. The First Level Support accesses the request. It is checked if all needed information are available. If all information are available ,the 1st Level Support tries to solve the issue. If the final solution can be provided by the 1st Level, a response is send to the requester. If it is not possible to solve the issue, the request is sent to the 2nd Level Support.
+![As-Is Contact us](https://github.com/DigiBP/Team-Watermelons/assets/127488344/0b558baa-8eaa-4ee3-82bb-c2b983b1810d)<br>
+
+Helpica then receives an e-mail. The handling feedbacks/requests lies within the responsibility of the 1st Level support. The First Level Support accesses the request. It is checked if all needed information are available. If all information are available ,the 1st Level Support tries to solve the issue. If the final solution can be provided by the 1st Level, a response is send to the requester. If it is not possible to solve the issue, the request is sent to the 2nd Level Support.
 
 The request is assessed by the second Level support. If the 2nd Level Support can solve the issue, the issue is solved. If it is not possible to solve the request, it is escalated to the CEO. The CEO then solves the issue. The response of a solved Issue is send to the customer by the 1st Level support.
 
