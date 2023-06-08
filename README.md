@@ -195,7 +195,7 @@ We catch those cases: If sentiment = 0, the sentiment is set as neutral. This al
 
 Further, a "technical error" could occur due to wrong entered email from the customer. In this case currently the process-flow itself will not be interrupted. But the customer satisfaction could suffer if the customer does not receive feedback. Even though if he has initially given wrong data.
 
-# Conclusion
+# Conclusion 🔚
 - valuable Inputs to helpica
 - Eliminating pain points
 - underestimated configurations in Make: high workload / lot of lessons learned
