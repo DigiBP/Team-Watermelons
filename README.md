@@ -150,11 +150,13 @@ Camunda 7 does not support conditions. The integrated form in the task could ben
 
 
 ## Make Scenario 3: Reply to customer
-This scenario is responsible for sending the reply to the customer. It checks if additional information is needed before sending the e-mail.<br>
-![reply2](https://github.com/DigiBP/Team-Watermelons/assets/127504730/74ae4831-5c42-42e7-96e8-a09f036d618f)<br>
+This scenario is responsible for sending the reply to the customer. It checks if additional information is needed before sending the e-mail.
+<br>
 
+![reply2](https://github.com/DigiBP/Team-Watermelons/assets/127504730/74ae4831-5c42-42e7-96e8-a09f036d618f)<br>
+<br>
 ![4_Additiona Feedback Reply Customer](https://github.com/DigiBP/Team-Watermelons/assets/127488344/2fb68b57-8d4c-4d2f-a0a5-382f5d1638ea)<br>
-- HTTP (Make a request): HTTP Make a requets: Using "fetchAndLock" get the requets from the service task "ask for additional information".
+- HTTP (Make a request): HTTP Make a request: Using "fetchAndLock" get the requets from the service task "ask for additional information".
 - Google Sheets (Search Rows): Based on the business key, indentify the row to be updated.
 - Google Sheets (Update a Row): Update the row with the "Feedback Needed" ("yes" or "no") and the "reply text".
 - Router: Check if the result of the "Feedback Needed" is "yes" or "no" and set the route accordingly.
