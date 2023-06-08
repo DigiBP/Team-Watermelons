@@ -175,8 +175,17 @@ This scenario is responsible for sending the reply to the customer. It checks if
 - HTTP (Make a request): Send the process back to Camunda.
 
 ## Camunda Workflow 2:<br> 
+
+The request is received in camunda.  The task is assigned to the responsible department.
+
 ![Form2](https://github.com/DigiBP/Team-Watermelons/assets/127504730/aeba6db3-0a9d-4d8b-9629-0e521632c64d)<br>
 
+-	The Camunda-forms show all information including what additional information was asked for and what the reply of the customer is
+-	The responsible department can solve the issue
+o	It is chosen if additional information is needed
+o	If yes, the corresponding field is filled
+o	If no, a already final solution/feedback is given
+-	A service task will continue with the workflow
 
 ## Make Scenario 4: Check additional feedback from customer<br>
 Check Helpica's inbox for the customer further information feedback email. There is a rule in gmail to set "Helpica Cases New" label for new emails.<br>
