@@ -176,6 +176,7 @@ Check Helpica's inbox for the customer further information feedback email. There
 - Text paser (Match pattern (Advanced)): Select only the case number (business key) from the email's subject.
 - Text paser (Match pattern (Advanced)): Split the email body between Helpica reply and customer feedback and select only the customer feedback. (Necessary due Camunda 7 limitaion - "A <Textarea> is not supported by Camunda Platform 7.18")
 - Text parser (Replace): Replace from the customer feedback newline (line feed) by space. (Necessary due Camunda 7 limitaion - "A <Textarea> is not supported by Camunda Platform 7.18").<br>
+  <br>
 ![7_MAKE_Parser](https://github.com/DigiBP/Team-Watermelons/assets/127488344/b2690ad0-629e-4098-b3c8-c8ce217059e5)<br>
 - Tools (Set variable): Create a variable out of the customer feedback text. Necessary to use in HTTP (Make a request).
 - Google Sheets (Search Rows): Indentify the row to be updated based on the business key.
