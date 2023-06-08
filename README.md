@@ -24,7 +24,7 @@ The aim of the feedack system is to offer the opportunity to both caregivers and
 5. Place a complaint
 6. Request an investigation for a payment issue
 
-Helpica.ch strives to digitalize its supporting processes. With their innovative business idea, they focus on delivering and developing a user-friendly App. Nevertheless, for the founder of Helpica and his team, it is essential that also processes around the app, in this case, the feedback-management process is efficient, and paint points of today's as-is process are eliminated. 
+Helpica.ch strives to digitalize its supporting processes. With their innovative business idea, they focus on delivering and developing a user-friendly App. Nevertheless, for the founder of Helpica and his team it is essential that also processes around the app, in this case the feedback-management process, is efficient, and paint points of today's as-is process are eliminated. 
 
 # Current As-Is Process 🔍 
 The following figure, shows the current feedback-management process of Helpica.
