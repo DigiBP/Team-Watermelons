@@ -129,6 +129,7 @@ This scenario performs the sentiment analysis of the customer's feedback. As a s
 <br> 
 
 ![3_MAKE_Sentiment Analysis](https://github.com/DigiBP/Team-Watermelons/assets/127488344/c46fb93b-01c9-476f-812e-0896f6bbdee4)<br>
+<br>
 - HTTP Make a requets: Using "fetchAndLock" get the requets from the service task "identify sentiment".
 - Google Sheets (Search Rows): Based on the business key, indentify the row to select the feedback text.
 - Eden AI (Identify General Sentiment of a Text): Via API identify the sentiment analysis from the text using IBM as provider.
