@@ -196,14 +196,6 @@ We catch those cases: If sentiment = 0, the sentiment is set as neutral. This al
 Further, a "technical error" could occur due to wrong entered email from the customer. In this case currently the process-flow itself will not be interrupted. But the customer satisfaction could suffer if the customer does not receive feedback. Even though if he has initially given wrong data.
 
 # Conclusion 🔚
-- valuable Inputs to helpica
-- Eliminating pain points
-- underestimated configurations in Make: high workload / lot of lessons learned
--  biggest challenges: parser in make --> we didn't know the small tricks
--  greatest archievement: finding a soluation to include Sentiment Analysis with Make (was not easy). A working workflow, happy stakeholders
-- AI is really promising : we included sentiment analysis --> valuable for Helpica
-- great collaboration with all the lecturers/coaches, great support from Maja!
-- was great to work on Helpica (already worked on that case in the previous semester in ABA)
 
 In conclusion we would like to highlight our journey, challenges faced, and collaborative efforts that led to successful outcomes.
 By working on the digitalization of the feedback process we are able to create and share valuable inputs for helpica.ch. Our solution helpes in eliminating several pain points and enhances the overall workflow. 
