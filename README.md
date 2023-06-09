@@ -142,12 +142,14 @@ This scenario performs the sentiment analysis of the customer's feedback. As a s
 ## Camunda workflow 1: request distribution and first assessment of the request<br>
 <br>
 The request with all information is received in Camunda.
+<br>
+
 
 ![Form1](https://github.com/DigiBP/Team-Watermelons/assets/127504730/457a3fb9-06d8-44f6-a831-d006d64ad13e)<br>
 
 -	The task is assigned to the responsible department according to the decision table. The employees of the responsible department find a new entry in the task list, claim the task and can solve it. 
 -	The Camunda form shows all data entered by the requester and the output of the sentiment. Based on the sentiment, the employees can easily prioritize. 
--	The responsible department can solves the issue. The agent can choose if additional information is needed:
+-	The responsible department can solve the issue. The agent can choose if additional information is needed:
      - If yes, the corresponding field is filled
      - If no, then final solution/feedback is already given
 -	A service task will continue with the workflow
@@ -175,12 +177,13 @@ The request is received in camunda.  The task is assigned to the responsible dep
 
 ![Form2](https://github.com/DigiBP/Team-Watermelons/assets/127504730/aeba6db3-0a9d-4d8b-9629-0e521632c64d)<br>
 
--	The Camunda-forms show all information including what additional information was asked for and what the reply of the customer is
--	The responsible department can solve the issue
-o	It is chosen if additional information is needed
-o	If yes, the corresponding field is filled
-o	If no, a already final solution/feedback is given
+-	The Camunda form shows all information including what additional information was asked for and what the reply of the customer is.
+-	The responsible department can solve the issue. The agent can choose if additional information is needed:
+     -	If yes, the corresponding field is filledo	If yes, the corresponding field is filled
+     -	If no, then final solution/feedback is already given
 -	A service task will continue with the workflow
+
+
 
 ## Make Scenario 4: Check additional feedback from customer<br>
 Check Helpica's inbox for the customer further information feedback email. There is a rule in gmail to set "Helpica Cases New" label for new emails.<br>
