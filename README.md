@@ -223,5 +223,5 @@ None of this would have been possible without the great collaboration among all 
 A special mention goes to Maja, whose tireless support significantly contributed to our success.
 
 We enjoyed continuing to work on the helpica.ch project, as this start-up was the outcome of the Agile Business Analysis module in the previous semester. Building upon our prior experience, we are proud of the progress made and the positive impact we have created.
-We look forward to share our results with the rest of the helpica.ch team and refining and expanding its capabilities in the future.
+We look forward to sharing our results with the rest of the helpica.ch team and refining and expanding its capabilities in the future.
 
