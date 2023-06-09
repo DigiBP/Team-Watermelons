@@ -141,15 +141,15 @@ This scenario performs the sentiment analysis of the customer's feedback. As a s
 
 ## Camunda workflow 1: request distribution and first assessment of the request<br>
 <br>
-The request with all information is received by camunda
+The request with all information is received in Camunda.
 
 ![Form1](https://github.com/DigiBP/Team-Watermelons/assets/127504730/457a3fb9-06d8-44f6-a831-d006d64ad13e)<br>
 
 -	The task is assigned to the responsible department according to the decision table. The employees of the responsible department find a new entry in the task list, claim the task and can solve it. 
--	The Camunda-forms show all data entered by the requester & the output of the sentiment. Based on the sentiment, the employees can easily prioritize. 
--	The responsible department can solves the issue. It is chosen if additional information is needed:
-o	  If yes, the corresponding field is filled
-o	  If no, a already final solution/feedback is given
+-	The Camunda form shows all data entered by the requester and the output of the sentiment. Based on the sentiment, the employees can easily prioritize. 
+-	The responsible department can solves the issue. The agent can choose if additional information is needed:
+     - If yes, the corresponding field is filled
+     - If no, then final solution/feedback is already given
 -	A service task will continue with the workflow
 
 **Notable limitations of Camunda 7**<br>
@@ -202,7 +202,7 @@ Check Helpica's inbox for the customer further information feedback email. There
 
 All processes can be continuously improved. Possible enhancements for the future are: 
 - The already integrated decision table allows the distribution of the requests to the correct department. Helpica starts with the first setup, and according to experience, the allocation to the internal roles/department can be adjusted flexibly.   
-- In addition to the created Google- form, a chatbot could be integrated, which asks the questions from the form
+- In addition to the available Google form, we will introduce alongside also a chatbot, which asks the questions from the form and can also include suggestions from an FAQ section based on similar cases.
 - Error handling: Error handling is an essential aspect of a process. During the design of the To-Bo process, we have included one error handling in make: While performing the sentiment analysis, depending on the inputs, no sentiment is found, e.g. the customer does only write one word). In that case, Eden AI does not detect any sentiment. We catch those cases: If sentiment = null, the sentiment is set to "neutral". Primarily this change had been made to avoid misunderstandings when the case is handled by an Helpica-agent, who then wonders why the field is empty and whether there is something wrong with the own tool 😉
   Further possible enhancement regarding technical error handling can be included for service tasks. For the Service Task "ask additional information," an E-Mail is sent to the requester. If the requester entered the wrong e-mail address or the requester's mailbox is full, the E-Mail does not reach the requester. In this case, currently, the process flow is not interrupted. After two days with no reply, the case will be closed. But to increase customer satisfaction, it can be evaluated if a user task should be integrated to catch such an error. The following shows a possible implementation:
 <img src="https://github.com/DigiBP/Team-Watermelons/assets/127504668/628cb64e-9d23-49d6-a9c2-c1d35af4f5f8" width="400">
